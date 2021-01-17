@@ -1,6 +1,8 @@
 개념
 =====
-<img title="cloud-native" src="./images/cloud-native.png" alt="cloud-native" width="500px">
+클라우드 네이티브는 클라우드 컴퓨팅 모델의 장점을 모두 활용하는 애플리케이션을 개발하고 실행하기 위한 접근 방식
+  
+<img title="cloud-native" src="./images/cloud-native.png" alt="cloud-native" width="400px">
 
 Traditional Application vs Cloud Native Application
 =====
