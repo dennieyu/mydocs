@@ -1,33 +1,52 @@
-DevOps
+배경
 =====
-> 개발의 이슈를 운영팀이 해결해야 하는 상황이 옴  
-> 범인 찾기  
-> 욕하기  
-> 문제 원인 분석  
-> 문제 해결  
-> 의사 소통  
-> 협업
+<img title="devops_motive" src="./images/devops_motive.png" alt="devops_motive" width="600px">
 
-동기
-=====
-<img title="devops_motive" src="./images/devops_motive.png" alt="example" width="600px">
+1. 운영 이관  
+1. 운영 문제 원인 분석 및 문제 해결  
+1. 개발팀과 운영팀간의 의사 소통 및 협업
 
-프로세스
+개념
 =====
-<img title="devops_process" src="./images/devops_process.png" alt="example" width="1200px">
+**데브옵스(DevOps)**는 소프트웨어의 **개발(Development)**과 **운영(Operations)**의 합성어로서, 소통, 협업 및 통합을 강조하는 개발 환경이나 문화를 말한다. 데브옵스는 소프트웨어 개발조직과 운영조직간의 상호 의존적 대응이며,  서비스를 빠른 시간에 개발 및 배포하는 것을 목적으로 한다.
+
+목적
+=====
+**데브옵스(DevOps)**의 목적은 전반적인 `배포 파이프라인`에 걸쳐있다. 여기에는 개선된 `배치(deployment) 주기`를 포함하며 다음으로 이어질 수 있다:
+
+1. 제품 출시까지 걸리는 기간 단축
+1. 배포 자동화
+1. 복구 시 더 빠른 평균 시간
+
+툴체인
+=====
+<img title="devops_process" src="./images/devops_process.jpg" alt="devops_process" width="600px">
+
+1. 계획 - 목적을 수행하기 앞서 방법이나 절차 등을 미리 생각하여 계획.
+1. 코드 - 코드 개발 및 검토, 버전 관리 도구, 코드 병합
+1. 빌드 - 지속적 통합(CI) 도구, 빌드 상태
+1. 테스트 - 테스트 및 결과가 성능을 결정
+1. 패키지 - 애플리케이션 디플로이 이전 단계
+1. 릴리스 - 변경사항 관리, 릴리스 승인, 릴리스 자동화
+1. 구성 - 인프라스트럭처 구성 및 관리, IaC(Infrastructure as Code) 도구
+1. 모니터링 - 애플리케이션 성능 모니터링, 최종 사용자 경험.
+
+아키덱처
+=====
+<img title="devops_architect" src="./images/devops_architect.png" alt="devops_architect" width="1200px">
 
 | 구분 | 설명 |
 | :---: | :--- |
-| 동기(Motive) | Dev와 Ops 간에 서로 다른 목표때문에 갈등이 발생한다. |
+| **동기(Motive)** | Dev와 Ops 간에 서로 다른 목표때문에 갈등이 발생한다. |
 | | (Dev는 고객에게 제공한 변경을 빠르게 보기를 원하나, Ops는 안정성에 관심이 많음) |
 | | 따라서, 공유된 목적에 대한 합의, Ownership, 가치의 공유 등이 중요하다. |
-| 프로세스(Process) | 소프트웨어를 어떻게 개발하고 배포할지 정의하는 프로세스가 툴보다 중요하다. |
+| **프로세스(Process)** | 소프트웨어를 어떻게 개발하고 배포할지 정의하는 프로세스가 툴보다 중요하다. |
 | | 개발에서 운영에 전달하는 속도를 관리하기 위한 프로세스를 만들고 최적화하여야 한다. |
-| 도구(Tools) | DevOps의 능률은 자동화에 의존하며, |
-| | 사용하는 도구는 version control, build, package, deployment, configuration 등이 있다. |
+| **도구(Tools)** | DevOps의 능률은 자동화에 의존하며, |
+| | 사용하는 도구는 `version control`, `build`, `package`, `deployment`, `configuration` 등이 있다. |
 
 | 구분 | 설명 |
 | :---: | :--- |
 | 측정지표 관점 | quality, testing 등 |
 | 프로세스 관점 | 협업, 빠른 피드백을 위한 흐름, 전체적인 프로세스 구성 |
-| 기술 관점 | 자동화를 통한 빠른 피드백 "인프라를 코드로 관리하기"와 같은 자동화된 릴리즈 |
+| 기술 관점 | 자동화를 통한 빠른 피드백 `인프라를 코드로 관리하기`와 같은 자동화된 릴리즈 |

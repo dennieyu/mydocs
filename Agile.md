@@ -1,19 +1,26 @@
-Agile
+개념
 =====
-- 애자일(Agile)은 기민하다라는 뜻으로 너무 계획이 없는 개발 방법론과 너무 체계적인 계획이 있는 개발 방법론 사이의 균형을 잡아보자는 의도로 나온 개발 방법론이다.
+- **애자일(Agile)**은 `기민하다`라는 뜻으로 너무 계획이 없는 개발 방법론과 너무 체계적인 계획이 있는 개발 방법론 사이의 균형을 잡아보자는 의도로 나온 개발 방법론이다.
 - 계획을 따르기보다 변화에 대응하는데 가치를 두고, 수직적인 업무 진행이 아닌 수평적 커뮤니케이션과 공개/공유(결과뿐만 아니라 그 맥락까지)을 중시한다.
 
-- Scrum
-<img title="scrum_framework" src="./images/scrum1.gif" alt="example" width="600px">
-<img title="scrum_framework" src="./images/scrum2.png" alt="example" width="600px">
+종류
+=====
+Scrum, Kanban board, XP (Extreme Programming)
 
-- Kanban Board
-<img title="kanban_board" src="./images/kanban.gif" alt="example" width="600px">
+Scrum
+=====
+<img title="scrum_framework" src="./images/scrum1.gif" alt="scrum_framework" width="600px">
+<img title="scrum_framework" src="./images/scrum2.png" alt="scrum_framework" width="600px">
 
-- Extreme Programming
-<img title="extreme-programming" src="./images/xp1.png" alt="example" width="600px">
-<img title="extreme-programming" src="./images/xp2.png" alt="example" width="600px">
-<img title="extreme-programming" src="./images/xp3.png" alt="example" width="600px">
+Kanban Board
+=====
+<img title="kanban_board" src="./images/kanban.gif" alt="kanban_board" width="600px">
+
+Extreme Programming
+=====
+<img title="extreme-programming" src="./images/xp1.png" alt="programming" width="600px">
+<img title="extreme-programming" src="./images/xp2.png" alt="programming" width="600px">
+<img title="extreme-programming" src="./images/xp3.png" alt="programming" width="600px">
 
 ```
 +---------------------------+-------------------------------+-------------------------------------------------------------------------------------+
