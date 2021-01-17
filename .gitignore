@@ -1,5 +1,5 @@
 HELP.md
-.README.md.html
+*.md.html
 
 ### STS ###
 .apt_generated
