@@ -17,11 +17,11 @@ UltimateThreadGroup
 <?xml version="1.0" encoding="UTF-8"?>
 <collectionProp name="ultimatethreadgroupdata">
    <collectionProp name="-1734936043">
-      <stringProp name="49">500</stringProp><!-- Start Threads Count : 동시 사용자 수 -->
-      <stringProp name="53">5</stringProp><!-- Initial Delay, sec : 초기 지연 -->
-      <stringProp name="49">1</stringProp><!-- Startup Time, sec : 500 / 1 초마다 쓰레드 단계적으로 증가 -->
-      <stringProp name="48577203">30000</stringProp><!-- Hold Load For, sec : 500분 동안 유지 -->
-      <stringProp name="53">5</stringProp><!-- Shutdown Time : 5초 동안 단계적으로 동시 사용자 제거 -->
+      <stringProp name="49">500</stringProp><!-- Start Threads Count : "500"개의 동시 사용자 수 -->
+      <stringProp name="53">5</stringProp><!-- Initial Delay, sec : "5"초 초기 지연 -->
+      <stringProp name="49">1</stringProp><!-- Startup Time, sec : "1"초 동안 단계적으로 동시 사용자 증가 -->
+      <stringProp name="48577203">30000</stringProp><!-- Hold Load For, sec : "500"분 동안 유지 -->
+      <stringProp name="53">5</stringProp><!-- Shutdown Time : "5"초 동안 단계적으로 동시 사용자 제거 -->
    </collectionProp>
 </collectionProp>
 ```
