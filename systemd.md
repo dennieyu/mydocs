@@ -1,7 +1,7 @@
 LINUX systemd
 =====
 
-   - "/etc/systemd/system" 디렉토리에 "tomcat.service" **서비스** 파일을 생성
+   - "/etc/systemd/system" 디렉토리에 "tomcat.service" **서비스** 파일 생성
 
       ```
       $ cd /etc/systemd/system
