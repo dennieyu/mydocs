@@ -5,7 +5,10 @@ LINUX systemd
       
       <img title="systemd" src="./images/systemd-components.png" alt="systemd" width="800px">
 
-   - "/etc/systemd/system" 디렉토리에 "tomcat.service" **서비스** 파일 생성
+예제#1
+=====
+
+   - "/etc/systemd/system" 디렉토리에 "tomcat.service" **서비스** 파일 생성 _ **예제 #1**
 
       ```
       $ cd /etc/systemd/system
@@ -31,7 +34,10 @@ LINUX systemd
       [Install]
       WantedBy=multi-user.target
       ```
-      
+
+예제#2
+=====
+
    - **서비스** 내용을 입력 한 후 저장 _ **예제 #2** (/usr/lib/systemd/system/rc-local.service)
 
       ```
@@ -60,6 +66,9 @@ LINUX systemd
       WantedBy=multi-user.target
       ```
 
+설명
+=====
+
       - 주요 항목 설명
       
       | 항목 | 설명 |
@@ -81,7 +90,12 @@ LINUX systemd
       | runlevel 5 다중 사용자 + GUI | graphical.target |
       | runlevel 6 재기동 | reboot.target |
 
-   - **시스템** 시작 시 자동으로 시작 할 수 있도록 **서비스** 등록
+명령어
+=====
+
+   - **시스템** 시작 시 자동으로 시작 할 수 있도록 **서비스** 활성화 필요
+
+   - 명령어 예제
 
       - 서비스 상태
 
