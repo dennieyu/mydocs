@@ -55,11 +55,15 @@ ConstantThroughputTimer
 CLI Mode
 =====
 
+   - 파라미터
+
 | command options | description |
 | ---: | :--- |
 | -n | This specifies JMeter is to run in cli mode |
 | -t | [name of JMX file that contains the Test Plan]. |
 | -l | [name of JTL file to log sample results to]. |
+
+   - 예시
 
 ```
 #!/bin/sh
