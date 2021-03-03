@@ -38,7 +38,7 @@ LINUX systemd
 예제#2
 =====
 
-   - **서비스** 내용을 입력 한 후 저장 _ **예제 #2** (/usr/lib/systemd/system/rc-local.service)
+   - **서비스** 내용을 입력 한 후 저장 _ **예제 #2** (/lib/systemd/system/rc-local.service)
 
       ```
       # This file is part of systemd.
@@ -69,26 +69,26 @@ LINUX systemd
 설명
 =====
 
-      - 주요 항목 설명
-      
-      | 항목 | 설명 |
-      | ---: | :--- |
-      | Environment | .bash_profile 설정은 bash shell 에 접속시 사용될 뿐, OS 구동 시 사용되는 systemd 에서는 **Enviroment**를 사용함.
-      | WorkingDirectory | 프로세스의 작업 디렉토리를 지정함. 특정 디렉토리에서 실행해야하는 프로세스에서 필요함. 별도의 지정이 없으면 **"/"** 를 작업 디렉토리로 사용함.
-      | After | 해당 라인에 등록되어 있는 서비스가 우선 실행되어야 현재 서비스가 실행됨. |
-      | SuccessExitStatus | 성공으로 판단할 시그널을 설정함. |
-      | RemainAfterExit | 실행 이후 해당 실행이 종료되더라도 RemainAfterExit=yes 옵션을 통해 유닛이 활성화 상태로 간주할 수 있음. |
-      | multi-user.target | SysV **runlevel 3**와 동일한 의미임. |
+   - 주요 항목 설명
 
-      - runlevel과 target 비교
+   | 항목 | 설명 |
+   | ---: | :--- |
+   | Environment | .bash_profile 설정은 bash shell 에 접속시 사용될 뿐, OS 구동 시 사용되는 systemd 에서는 **Enviroment**를 사용함.
+   | WorkingDirectory | 프로세스의 작업 디렉토리를 지정함. 특정 디렉토리에서 실행해야하는 프로세스에서 필요함. 별도의 지정이 없으면 **"/"** 를 작업 디렉토리로 사용함.
+   | After | 해당 라인에 등록되어 있는 서비스가 우선 실행되어야 현재 서비스가 실행됨. |
+   | SuccessExitStatus | 성공으로 판단할 시그널을 설정함. |
+   | RemainAfterExit | 실행 이후 해당 실행이 종료되더라도 RemainAfterExit=yes 옵션을 통해 유닛이 활성화 상태로 간주할 수 있음. |
+   | multi-user.target | SysV **runlevel 3**와 동일한 의미임. |
 
-      | runlevel | target |
-      | ---: | :--- |
-      | runlevel 0 정지(시스템 종료) | poweroff.target
-      | runlevel 1 단일 사용자(single user) | rescue.target |
-      | runlevel 2,3,4 다중 사용자(multiuser) | multiuser.target |
-      | runlevel 5 다중 사용자 + GUI | graphical.target |
-      | runlevel 6 재기동 | reboot.target |
+   - runlevel과 target 비교
+
+   | runlevel | target |
+   | ---: | :--- |
+   | runlevel 0 정지(시스템 종료) | poweroff.target
+   | runlevel 1 단일 사용자(single user) | rescue.target |
+   | runlevel 2,3,4 다중 사용자(multiuser) | multiuser.target |
+   | runlevel 5 다중 사용자 + GUI | graphical.target |
+   | runlevel 6 재기동 | reboot.target |
 
 명령어
 =====
