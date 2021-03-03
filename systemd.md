@@ -88,5 +88,5 @@ LINUX systemd
       - 자세한 오류 및 기록 확인
 
       ```
-      $ sudo journalctl | grep tomcat.service
+      $ journalctl | grep tomcat.service
       ```
