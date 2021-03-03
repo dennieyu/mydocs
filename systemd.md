@@ -42,6 +42,16 @@ LINUX systemd
       | SuccessExitStatus | 성공으로 판단할 시그널을 설정함. |
       | multi-user.target | SysV **runlevel 3**와 동일한 의미임. |
 
+      - runlevel과 target 비교
+
+      | runlevel | target |
+      | ---: | :--- |
+      | runlevel 0 정지(시스템 종료) | poweroff.target
+      | runlevel 1 단일 사용자(single user) | rescue.target |
+      | runlevel 2,3,4 다중 사용자(multiuser) | multiuser.target |
+      | runlevel 5 다중 사용자 + GUI | graphical.target |
+      | runlevel 6 재기동 | reboot.target |
+
    - **시스템** 시작 시 자동으로 시작 할 수 있도록 **서비스** 등록
 
       - 서비스 상태
