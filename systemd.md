@@ -83,7 +83,7 @@ LINUX systemd
       - 모든 서비스 조회
 
       ```
-      $ systemctl list-units
+      $ systemctl list-unit-files
       ```
 
       - 자세한 오류 및 기록 확인
