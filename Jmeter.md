@@ -7,6 +7,7 @@ APACHE Jmeter
 
 UltimateThreadGroup
 =====
+
    - 동시 사용자 설정
    
 <img title="cloud-native" src="./images/jmeter_threads.png" alt="jmeter-threads" width="800px">
@@ -28,6 +29,7 @@ UltimateThreadGroup
 
 ConstantThroughputTimer
 =====
+
    - 분당 요청 수 설정
 
 <img title="cloud-native" src="./images/jmeter_throughput1.png" alt="jmeter-throughout" width="800px">
@@ -48,4 +50,19 @@ ConstantThroughputTimer
       <savedValue>0.0</savedValue>
    </doubleProp>
 </ConstantThroughputTimer>
+```
+
+CLI Mode
+=====
+
+| command options | description |
+| ---: | :--- |
+| -n | This specifies JMeter is to run in cli mode |
+| -t | [name of JMX file that contains the Test Plan]. |
+| -l | [name of JTL file to log sample results to]. |
+
+```
+#!/bin/sh
+export CUR_DATE=`date +%Y%m%d_%H%M%S`
+../bin/jmeter -n -t ./jmx/PRJ_TEST.jmx -l ./log/${CUR_DATE}_PRJ_TEST.log
 ```
