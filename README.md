@@ -6,6 +6,8 @@
 1. [**SYSTEMD**](./systemd.md) - 설정
 1. [**JVM**](./JVM.md) - 모니터링
 1. [**JMETER**](./Jmeter.md) - 설정
+1. [**GIT**](./git.md) - 소개
+1. [**클린코드**](./cleancode.md) - 소개
 
 ## BE
 1. [**클라우드네이티브애플리케이션**](./클라우드네이티브애플리케이션.md) - 개념
@@ -24,6 +26,7 @@
 1. [**함수형프로그래밍**](./함수형프로그래밍_202101.pdf) - 함수형 프로그래밍 패러다임
 
 ## BDML
+1. [**빅데이터**](./빅데이터_202103.pdf) - 데이터플랫폼
 1. [**Pandas**](https://www.kaggle.com/learn/pandas) - Kaggle 링크
 1. [**Data Visualization**](https://www.kaggle.com/learn/data-visualization) - Kaggle 링크
 1. [**Data Cleaning**](https://www.kaggle.com/learn/data-cleaning) - Kaggle 링크
