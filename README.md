@@ -27,6 +27,7 @@
 
 ## BDML
 1. [**빅데이터**](./빅데이터_202103.pdf) - 데이터플랫폼
+1. [**데이터스토리지포맷**](./데이터스토리지포맷.md) - 데이터플랫폼
 1. [**Pandas**](https://www.kaggle.com/learn/pandas) - Kaggle 링크
 1. [**Data Visualization**](https://www.kaggle.com/learn/data-visualization) - Kaggle 링크
 1. [**Data Cleaning**](https://www.kaggle.com/learn/data-cleaning) - Kaggle 링크
