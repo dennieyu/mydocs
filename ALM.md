@@ -26,3 +26,5 @@
 =====
 
  Jenkins, Travis CI
+
+ <img title="ALM" src="./images/devops/deployment.png" alt="deployment" width="800px">
