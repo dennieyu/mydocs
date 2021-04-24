@@ -1,6 +1,8 @@
 개념
 =====
 
+**Application Lifecycle Management**
+
  <img title="ALM" src="./images/devops/ALM_1.png" alt="ALM_1" width="600px">
 
 
@@ -14,7 +16,7 @@
 =====
 
   SpotBugs, SonarQube, PMD, jUnit
- 
+
 
 소스 관리 시스템
 =====
