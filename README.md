@@ -1,9 +1,10 @@
 # mydocs
 개념정리, 프리젠테이션
 
-## INFRA
+## Ops
 1. [**네트워크파라미터**](./네트워크파라미터.md) - 설정
 1. [**OS**](./os.md) - 배포본 계열
+1. [**Program vs Process vs Thread**](./ProcessVsThread.md) - 개념
 1. [**SYSTEMD**](./systemd.md) - 설정
 1. [**JVM**](./JVM.md) - 모니터링
 1. [**JMETER**](./Jmeter.md) - 설정
@@ -12,6 +13,7 @@
 1. [**APM**](./APM.md) - 앱 성능 관리
 1. [**ELK Stack**](./ELK.md) - Elastic Stack 소개
 1. [**Metrics Stack**](./메트릭스스택.md) - 모니터링 구성
+1. [**Site Reliability Engineering**](./DevOpsVsSRE.md) - SRE 개념
 
 ## BE
 1. [**클라우드네이티브애플리케이션**](./클라우드네이티브애플리케이션.md) - 개념
