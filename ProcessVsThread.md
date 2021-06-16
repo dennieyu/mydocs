@@ -12,3 +12,7 @@ Program vs Process vs Thread
    - **Thread**
    
    <img title="thread" src="./images/os/thread.png" alt="thread" width="1000px">
+
+   - **메모리 영역**
+   
+   <img title="memory" src="./images/os/memory.jfif" alt="memory" width="500px">
