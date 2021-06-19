@@ -86,7 +86,7 @@ S1: Survivor 1
 Memory Leak 사례
 =====
    1. <a href="https://woowabros.github.io/tools/2019/05/24/jvm_memory_leak.html" target="_blank">https://woowabros.github.io/tools/2019/05/24/jvm_memory_leak.html</a>
-   1. <a href="https://https://gist.github.com/ihoneymon/9efec8cc2b671a020b5164260992c87c" target="_blank">https://gist.github.com/ihoneymon/9efec8cc2b671a020b5164260992c87c</a>
+   1. <a href="https://gist.github.com/ihoneymon/9efec8cc2b671a020b5164260992c87c" target="_blank">https://gist.github.com/ihoneymon/9efec8cc2b671a020b5164260992c87c</a>
 
 쓰레드 분석하기
 =====
