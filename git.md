@@ -3,10 +3,21 @@ GIT
 
 ## 1. 최초 설정
 
-### 사용자 정보
+### 사용자 정보 수정
 ```
 git config --global user.name ""
 git config --global user.email ""
+
+git config --local user.name ""
+git config --local user.email ""
+```
+
+### 설정 확인
+```
+git config --system --list # System 설정 파일을 확인하고 싶다면
+git config --global --list # Global 설정 파일을 확인하고 싶다면
+git config --local --list # Local 설정 파일을 확인하고 싶다면
+git config --list # 모든 설정을 확인하고 싶으면
 ```
 
 ## 2. 저장소 관리
