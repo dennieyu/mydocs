@@ -5,11 +5,11 @@ GIT
 
 ### 사용자 정보 수정
 ```
-git config --global user.name ""
-git config --global user.email ""
+git config --global user.name "blabla"
+git config --global user.email "blabla@gmail.com"
 
-git config --local user.name ""
-git config --local user.email ""
+git config --local user.name "blabla"
+git config --local user.email "blabla@gmail.com"
 ```
 
 ### 설정 확인
