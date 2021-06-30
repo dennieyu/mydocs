@@ -30,7 +30,7 @@ DEPTNO  DEPTNO
               40
 ```
 
-# mybatis 에서 foreach를 사용하여 다중 INSERT, UNION을 이용해서 중복 제거
+# mybatis 에서 `foreach` 를 사용하여 다중 INSERT 시 `UNION` 을 이용해서 중복 제거
 ```
 <foreach item="member" collection="memberList" separator="UNION">
 (
