@@ -42,7 +42,7 @@ git remote
 
 ### 기존 저장소를 복제
 ```
-git clone master https://github.com/id/project.git
+git clone -b master https://github.com/id/project.git # git clone https://github.com/id/project.git 
 git log
 ```
 
