@@ -75,7 +75,7 @@ git push origin <branch_name>
 ```
 git push origin -u <new_name>
 ```
-- `-u` 옵션은 현재 브랜치를 자동으로 origin이라는 원격지 저장소의 master 브랜치에 연결. 연결 후 `git push`, `git pull` 단축 명령어 사용 가능함.
+- `-u` 옵션은 현재 브랜치를 자동으로 origin이라는 원격지 저장소의 브랜치에 연결. 연결 후 `git push`, `git pull` 단축 명령어 사용 가능함.
 
 ## 4. 브랜치 관리
 
@@ -120,6 +120,11 @@ git branch -m <new_name>
 git branch -a
 ```
 
+### 꼬리표 달기
+```
+git tag 1.0.0 1b2e1d63ff
+```
+- `1b2e1d63ff` 부분은 꼬리표가 가리킬 확정본 식별자임. `git log` 명령으로 확정본 식별자를 얻을 수 있음.
 
 Git-flow Workflow
 =====
@@ -133,13 +138,13 @@ Git-flow Workflow
 ### Develop and Master Branches
 ```
 git branch develop # 생성
-git push -u origin develop # 푸쉬
+git push -u origin develop # 원격 브랜치 연결
 ```
 
 ### Feature Branches
 ```
 git checkout develop # 전환
-git checkout -b feature_branch # 생성 후 feature 개발
+git checkout -b feature_branch # 피쳐 브랜치 생성 후 feature 개발
 
 git checkout develop # 전환
 git merge feature_branch # 병합
@@ -148,7 +153,7 @@ git merge feature_branch # 병합
 ### Release Branches
 ```
 git checkout develop # 전환
-git checkout -b release/0.1.0 # 릴리즈 브랜치 생성
+git checkout -b release/0.1.0 # 릴리즈 브랜치 생성 후 병합
 
 git checkout master # 전환
 git merge release/0.1.0 # 병합
@@ -162,7 +167,7 @@ git branch -d release/0.1.0 # 제거
 ### Hotfix Branches
 ```
 git checkout master # 전환
-git checkout -b hotfix_branch # 브랜치 생성 후 bug fix
+git checkout -b hotfix_branch # 버그 브랜치 생성 후 bug fix
 
 git checkout master # 전환
 git merge hotfix_branch # 병합
@@ -172,3 +177,8 @@ git merge hotfix_branch # 병합
 
 git branch -D hotfix_branch # 제거
 ```
+
+설치 프로그램
+=====
+- [**OS X용 git 다운로드**](http://git-scm.com/download/mac)
+- [**Windows용 git 다운로드**](https://gitforwindows.org/)
