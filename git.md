@@ -138,22 +138,22 @@ git push -u origin develop # 푸쉬
 
 ### Feature Branches
 ```
-git checkout develop # 변환
+git checkout develop # 전환
 git checkout -b feature_branch # 생성 후 feature 개발
 
-git checkout develop # 변환
+git checkout develop # 전환
 git merge feature_branch # 병합
 ```
 
 ### Release Branches
 ```
-git checkout develop # 변환
+git checkout develop # 전환
 git checkout -b release/0.1.0 # 릴리즈 브랜치 생성
 
-git checkout master # 변환
+git checkout master # 전환
 git merge release/0.1.0 # 병합
 
-git checkout develop # 변환
+git checkout develop # 전환
 git merge release/0.1.0 # 병합
 
 git branch -d release/0.1.0 # 제거
@@ -161,13 +161,13 @@ git branch -d release/0.1.0 # 제거
 
 ### Hotfix Branches
 ```
-git checkout master # 변환
+git checkout master # 전환
 git checkout -b hotfix_branch # 브랜치 생성 후 bug fix
 
-git checkout master # 변환
+git checkout master # 전환
 git merge hotfix_branch # 병합
 
-git checkout develop # 변환
+git checkout develop # 전환
 git merge hotfix_branch # 병합
 
 git branch -D hotfix_branch # 제거
