@@ -141,6 +141,8 @@ git branch develop # 생성
 git push -u origin develop # 원격 브랜치 연결
 ```
 
+<img title="gitflow" src="./images/git/develop-branch.jpeg" alt="develop" width="600px">
+
 ### Feature Branches
 ```
 git checkout develop # 전환
@@ -149,6 +151,8 @@ git checkout -b feature_branch # 피쳐 브랜치 생성 후 feature 개발
 git checkout develop # 전환
 git merge feature_branch # 병합
 ```
+
+<img title="gitflow" src="./images/git/feature-branch.jpeg" alt="feature" width="600px">
 
 ### Release Branches
 ```
@@ -164,6 +168,8 @@ git merge release/0.1.0 # 병합
 git branch -d release/0.1.0 # 제거
 ```
 
+<img title="gitflow" src="./images/git/release-branch.jpeg" alt="release" width="600px">
+
 ### Hotfix Branches
 ```
 git checkout master # 전환
@@ -177,6 +183,8 @@ git merge hotfix_branch # 병합
 
 git branch -D hotfix_branch # 제거
 ```
+
+<img title="gitflow" src="./images/git/hotfix-branch.jpeg" alt="hotfix" width="600px">
 
 설치 프로그램
 =====
