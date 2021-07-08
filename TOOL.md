@@ -58,3 +58,19 @@ services:
    - Docker 환경이 파일로 관리된다
    - 협업 하는 모두가 명령어 하나로 쉽게 같은 환경을 사용할 수 있게 된다
 
+Sonarqube
+=====
+
+- [**(출처) 코드 분석 및 코드 품질 향상/아빠프로그래머님 블로그**](https://daddyprogrammer.org/post/817/sonarqube-analysis-intergrated-intellij/)
+
+- 목차
+   - 소나큐브 서버 실행
+   - 소나큐브 웹 어드민
+   - 기능 업데이트
+   - 유저 관리
+   - 그룹 관리
+   - Intellij와의 연동
+   - 정적 파일 분석
+   - SonarQube 서버에서 정적 분석 하기
+
+<img title="Sonarqube" src="./images/sonarQube_screenshot.png" alt="Sonarqube" width="800px">
