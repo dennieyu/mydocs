@@ -16,6 +16,7 @@
 1. [**Metrics Stack**](./메트릭스스택.md) - 모니터링 구성
 1. [**Site Reliability Engineering**](./DevOpsVsSRE.md) - SRE 개념
 1. [**소프트웨어아키텍쳐**](./소프트웨어아키텍쳐.md) - 개념
+1. [**AWS**](./AWS.md) - 소개
 
 ## BE
 1. [**클라우드네이티브애플리케이션**](./클라우드네이티브애플리케이션.md) - 개념
