@@ -3,17 +3,17 @@
 
 - **환경**
 
-   - Docker Desktop (https://docs.docker.com/docker-for-windows/install/)
-   - Kitematic (https://github.com/docker/kitematic/releases)
-   - IntelliJ IDEA 2021.1.3 (Ultimate Edition)
-   - Jenkins
-   - Github
+   - Docker Desktop - [https://docs.docker.com/docker-for-windows/install/](https://docs.docker.com/docker-for-windows/install/)
+   - Kitematic - [https://github.com/docker/kitematic/releases](https://github.com/docker/kitematic/releases)
+   - IntelliJ IDEA 2021.1.3 - [Ultimate Edition](https://www.jetbrains.com/ko-kr/idea/download)
+   - Jenkins - [https://www.jenkins.io/](https://www.jenkins.io/)
+   - Github - [https://github.com/](https://github.com/)
 
 - **구축 인프라**
 
    - jenkins를 통해 **CI (Test와 Build 자동화)**, plugin과 script를 통해 **CD (배포 자동화)** 구축
 
-   <img title="CICD" src="../images/devops/CI_CD_Infra_Local.png" alt="CICD" width="800px">
+   <img title="CICD" src="./images/devops/CI_CD_Infra_Local.png" alt="CICD" width="800px">
 
    1. local server에 docker를 이용해 jenkins 구동
    1. develop server에서 code push
@@ -51,7 +51,7 @@
 AWS 환경에 자동 배포 서버 구축하기
 =====
 
-<img title="CICD" src="../images/devops/CI_CD_Infra_AWS.png" alt="CICD" width="1000px">
+<img title="CICD" src="./images/devops/CI_CD_Infra_AWS.png" alt="CICD" width="1000px">
 
 [**출처 - 로컬 PC에 CICD 구축하기 (Jenkins, Ngrok, docker)/전준엽님**](https://galid1.tistory.com/743)
 
