@@ -26,7 +26,7 @@ IntelliJ + H2 Database
 1. IntelliJ 데이터베이스 탭 선택
 1. 드라이버 설정
 
-<img title="IntelliJ" src="../images/intellij/intellij_h2_database_step3.png" alt="IntelliJ" width="1000px">
+<img title="IntelliJ" src="../images/intellij/intellij_h2_database_step3.png" alt="IntelliJ" width="1200px">
 
 - **Step 4**
 
@@ -34,11 +34,11 @@ IntelliJ + H2 Database
 1. 연결 테스트 진행
 1. 저장 후 데이터베이스 정보 확인
 
-<img title="IntelliJ" src="../images/intellij/intellij_h2_database_step4.png" alt="IntelliJ" width="1000px">
+<img title="IntelliJ" src="../images/intellij/intellij_h2_database_step4.png" alt="IntelliJ" width="1200px">
 
 - **Step 5**
 
 1. 콘솔 오픈
 1. 쿼리 작성 후 실행
 
-<img title="IntelliJ" src="../images/intellij/intellij_h2_database_step5.png" alt="IntelliJ" width="1000px">
+<img title="IntelliJ" src="../images/intellij/intellij_h2_database_step5.png" alt="IntelliJ" width="800px">

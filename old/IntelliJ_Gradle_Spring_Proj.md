@@ -46,7 +46,7 @@ IntelliJ + Gradle + SpringBoot
 1. logback.xml 작성
 1. 오른쪽 Gradle Tasks 확인
 
-<img title="IntelliJ" src="../images/intellij/ingellij_gradle_spring_step5.png" alt="IntelliJ" width="1000px">
+<img title="IntelliJ" src="../images/intellij/ingellij_gradle_spring_step5.png" alt="IntelliJ" width="1200px">
 
 - **Step 6**
 
@@ -55,7 +55,7 @@ IntelliJ + Gradle + SpringBoot
 1. 로그 콘솔 확인
 1. Started.. Application 로그를 보고 어플리케이션이 구동됨을 확인
 
-<img title="IntelliJ" src="../images/intellij/ingellij_gradle_spring_step6.png" alt="IntelliJ" width="1000px">
+<img title="IntelliJ" src="../images/intellij/ingellij_gradle_spring_step6.png" alt="IntelliJ" width="1200px">
 
 - **Step 7**
 
