@@ -9,7 +9,6 @@ Flyway
 - [**(출처) Flyway 로 Java 에서 DB schema, seed 관리하기/강남언니 공식 블로그**](https://blog.gangnamunni.com/post/introducing-flyway)
 
 - DB schema 를 코드로 관리한다는 것
-
    - 목표
       - 현재 DB schema 를 코드로 옮긴다
       - 앞으로 DB schema 변경을 코드로 관리한다
@@ -21,6 +20,43 @@ Flyway
       - 현재 DB schema 를 기준으로 migration 파일 생성
       - seed 파일 생성
 
+- 실행 벙법
+   - Spring Boot startup, CLI, API, Maven, Gradle, Ant, SBT
+
+
+- Spring Boot startup
+   - 설정 파일 (application.yml)
+
+	```
+	  flyway:
+	    enabled: true
+	    url: jdbc:h2:mem:mydb
+	    user: sa
+	    password:
+	    baseline-on-migrate: true
+	    baseline-version: 0
+	    locations: classpath:db/migration/{vendor},filesystem:/opt/migration/{vendor}
+	```
+
+- CLI
+   - 설정 파일 (외부 설정 파일)
+
+	```
+	# ./src/main/resources/flyway_main.conf
+	
+	flyway.url=jdbc:h2:mem:mydb
+	flyway.schemas=public
+	flyway.user=sa
+	flyway.password=
+	flyway.locations=filesystem:src/main/resources/db/migration/main
+	```
+
+   - 실행 (migrate)
+
+	```
+	$ flyway -configFiles=./src/main/resources/flyway_main.conf migrate
+	```
+
 Docker compose
 =====
 
@@ -30,28 +66,28 @@ Docker compose
 
 - 예제
 
-```
-# docker-compose.yml
-
-version: '3'
-
-services:
-  database:
-    image: mysql:5.7.27
-    ports:
-      - 43306:3306
-    environment:
-      MYSQL_ROOT_PASSWORD: password
-    command: [ '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci' ]
-	redis:
-    image: redis:5.0.5
-    ports:
-      - 46379:6379
-  influxdb:
-    image: influxdb
-    ports:
-      - 48086:8086
-```
+	```
+	# docker-compose.yml
+	
+	version: '3'
+	
+	services:
+	  database:
+	    image: mysql:5.7.27
+	    ports:
+	      - 43306:3306
+	    environment:
+	      MYSQL_ROOT_PASSWORD: password
+	    command: [ '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci' ]
+		redis:
+	    image: redis:5.0.5
+	    ports:
+	      - 46379:6379
+	  influxdb:
+	    image: influxdb
+	    ports:
+	      - 48086:8086
+	```
 
 - 장점
    - 띄우고 내리는 등의 행위가 편하다
@@ -64,6 +100,7 @@ Sonarqube
 - [**(출처) 코드 분석 및 코드 품질 향상/아빠프로그래머님 블로그**](https://daddyprogrammer.org/post/817/sonarqube-analysis-intergrated-intellij/)
 
 - 목차
+
    - 소나큐브 서버 실행
    - 소나큐브 웹 어드민
    - 기능 업데이트
@@ -73,4 +110,6 @@ Sonarqube
    - 정적 파일 분석
    - SonarQube 서버에서 정적 분석 하기
 
-<img title="Sonarqube" src="./images/sonarQube_screenshot.png" alt="Sonarqube" width="800px">
+- 스크린샷
+   
+   <img title="Sonarqube" src="./images/sonarQube_screenshot.png" alt="Sonarqube" width="800px">
