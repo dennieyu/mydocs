@@ -3,7 +3,8 @@ TOOL
 
 개발 환경 툴
 
-Flyway
+
+[Flyway](https://flywaydb.org/)
 =====
 
 - [**(출처) Flyway 로 Java 에서 DB schema, seed 관리하기/강남언니 공식 블로그**](https://blog.gangnamunni.com/post/introducing-flyway)
@@ -21,44 +22,44 @@ Flyway
       - seed 파일 생성
 
 - 실행 벙법
-   - Spring Boot On-Startup, CLI, API, Maven, Gradle, Ant, SBT
+   - `Spring Boot On-Startup`, `CLI`, `API`, `Maven`, `Gradle`, `Ant`, `SBT`
 
-
-- Spring Boot On-Startup
+- `Spring Boot On-Startup`
    - 설정 파일 (application.yml)
 
-	```
-	spring:
-	  flyway:
-	    enabled: true
-	    url: jdbc:h2:mem:mydb
-	    user: sa
-	    password:
-	    baseline-on-migrate: true
-	    baseline-version: 0
-	    locations: classpath:db/migration/{vendor},filesystem:/opt/migration/{vendor}
-	```
+   ```
+   spring:
+     flyway:
+       enabled: true
+       url: jdbc:h2:mem:mydb
+       user: sa
+       password:
+       baseline-on-migrate: true
+       baseline-version: 0
+       locations: classpath:db/migration/{category},filesystem:/opt/migration/{category}
+   ```
 
-- CLI
+- `CLI`
    - 설정 파일 (외부 설정 파일)
 
-	```
-	# ./src/main/resources/flyway_main.conf
-	
-	flyway.url=jdbc:h2:mem:mydb
-	flyway.schemas=public
-	flyway.user=sa
-	flyway.password=
-	flyway.locations=filesystem:src/main/resources/db/migration/main
-	```
+   ```
+   # ./src/main/resources/flyway_{category}.conf
+   
+   flyway.url=jdbc:h2:mem:mydb
+   flyway.schemas={schemas}
+   flyway.user=sa
+   flyway.password=
+   flyway.locations=filesystem:src/main/resources/db/migration/{category}
+   ```
 
    - 실행 (migrate)
 
-	```
-	$ flyway -configFiles=./src/main/resources/flyway_main.conf migrate
-	```
+   ```
+   $ flyway -configFiles=./src/main/resources/flyway_{category}.conf migrate
+   ```
 
-Docker compose
+
+[Docker compose](https://docs.docker.com/compose/)
 =====
 
 - [**(출처) Docker Compose 로 local 개발 환경 쉽게 관리하기/강남언니 공식 블로그**](https://blog.gangnamunni.com/post/docker-compose-for-local-env)
@@ -67,35 +68,36 @@ Docker compose
 
 - 예제
 
-	```
-	# docker-compose.yml
-	
-	version: '3'
-	
-	services:
-	  database:
-	    image: mysql:5.7.27
-	    ports:
-	      - 43306:3306
-	    environment:
-	      MYSQL_ROOT_PASSWORD: password
-	    command: [ '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci' ]
-		redis:
-	    image: redis:5.0.5
-	    ports:
-	      - 46379:6379
-	  influxdb:
-	    image: influxdb
-	    ports:
-	      - 48086:8086
-	```
+   ```
+   # docker-compose.yml
+   
+   version: '3'
+   
+   services:
+     database:
+       image: mysql:5.7.27
+       ports:
+         - 43306:3306
+       environment:
+         MYSQL_ROOT_PASSWORD: password
+       command: [ '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci' ]
+     redis:
+       image: redis:5.0.5
+       ports:
+         - 46379:6379
+     influxdb:
+       image: influxdb
+       ports:
+         - 48086:8086
+   ```
 
 - 장점
    - 띄우고 내리는 등의 행위가 편하다
    - Docker 환경이 파일로 관리된다
    - 협업 하는 모두가 명령어 하나로 쉽게 같은 환경을 사용할 수 있게 된다
 
-Sonarqube
+
+[Sonarqube](https://www.sonarqube.org/)
 =====
 
 - [**(출처) 코드 분석 및 코드 품질 향상/아빠프로그래머님 블로그**](https://daddyprogrammer.org/post/817/sonarqube-analysis-intergrated-intellij/)
@@ -106,10 +108,26 @@ Sonarqube
    - 기능 업데이트
    - 유저 관리
    - 그룹 관리
-   - Intellij와의 연동
+   - Intellij 연동
    - 정적 파일 분석
    - SonarQube 서버에서 정적 분석 하기
 
-- 스크린샷
+- SonarQube Dashboard
    
    <img title="Sonarqube" src="./images/sonarQube_screenshot.png" alt="Sonarqube" width="800px">
+
+
+[AQueryTool](http://aquerytool.com/)
+=====
+
+- [**(출처) http://digital2u.co.kr**](http://digital2u.co.kr/board/form/view/db/1114/1/0)
+
+- AQueryTool은 웹 기반 ERD 툴 + SQL 자동 생성 프로그램
+   - Join, Paging 을 포함해 다양한 SQL 문을 자동으로 생성
+   - 테스트 데이터를 자동으로 생성
+   - Java, C#, Javascript 모델도 자동으로 생성
+   - from SQL to ERD (Reverse Engineering)
+   - from ERD to SQL
+
+- 젊은 ERD 툴
+
