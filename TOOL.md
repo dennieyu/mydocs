@@ -21,13 +21,14 @@ Flyway
       - seed 파일 생성
 
 - 실행 벙법
-   - Spring Boot startup, CLI, API, Maven, Gradle, Ant, SBT
+   - Spring Boot On-Startup, CLI, API, Maven, Gradle, Ant, SBT
 
 
-- Spring Boot startup
+- Spring Boot On-Startup
    - 설정 파일 (application.yml)
 
 	```
+	spring:
 	  flyway:
 	    enabled: true
 	    url: jdbc:h2:mem:mydb
@@ -100,7 +101,6 @@ Sonarqube
 - [**(출처) 코드 분석 및 코드 품질 향상/아빠프로그래머님 블로그**](https://daddyprogrammer.org/post/817/sonarqube-analysis-intergrated-intellij/)
 
 - 목차
-
    - 소나큐브 서버 실행
    - 소나큐브 웹 어드민
    - 기능 업데이트
