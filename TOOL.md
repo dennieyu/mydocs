@@ -120,7 +120,7 @@ TOOL
 [AQueryTool](http://aquerytool.com/)
 =====
 
-- [**(출처) http://digital2u.co.kr**](http://digital2u.co.kr/board/form/view/db/1114/1/0)
+- [**가이드**](https://aquerytool.com/help/index/)
 
 - AQueryTool은 웹 기반 ERD 툴 + SQL 자동 생성 프로그램
    - Join, Paging 을 포함해 다양한 SQL 문을 자동으로 생성
