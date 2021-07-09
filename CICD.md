@@ -9,11 +9,13 @@
    - Jenkins - [https://www.jenkins.io/](https://www.jenkins.io/)
    - Github - [https://github.com/](https://github.com/)
 
+- [**출처 - 로컬 PC에 CI/CD 구축하기 (Jenkins, Ngrok, docker)/전준엽님**](https://galid1.tistory.com/743)
+
 - **구축 인프라**
 
    - jenkins를 통해 **CI (Test와 Build 자동화)**, plugin과 script를 통해 **CD (배포 자동화)** 구축
 
-   <img title="CICD" src="./images/devops/CI_CD_Infra_Local.png" alt="CICD" width="800px">
+   <img title="CI/CD" src="./images/devops/CI_CD_Infra_Local.png" alt="CI/CD" width="800px">
 
    1. local server에 docker를 이용해 jenkins 구동
    1. develop server에서 code push
@@ -51,8 +53,33 @@
 AWS 환경에 자동 배포 서버 구축하기
 =====
 
-<img title="CICD" src="./images/devops/CI_CD_Infra_AWS.png" alt="CICD" width="1000px">
+- [**출처 - Jenkins와 CodeDeploy를 이용한 AWS에 CI/CD 구축하기/전준엽님**](https://galid1.tistory.com/746) 
 
-[**출처 - 로컬 PC에 CICD 구축하기 (Jenkins, Ngrok, docker)/전준엽님**](https://galid1.tistory.com/743)
+#### **구축 인프라 (Case #1)**
 
-[**출처 - Jenkins와 CodeDeploy를 이용한 AWS에 CICD 구축하기/전준엽님**](https://galid1.tistory.com/746) 
+<img title="CI/CD" src="./images/devops/CI_CD_Infra_CodeDeploy_AWS.png" alt="CI/CD" width="1000px">
+
+- CI/CD 파이프라인 구축
+   - CodeDeploy Agent가 설치된 EC2 서버 2대(CodeDeploy와 S3에 접근가능한)
+   - Load Balander
+   - S3 버킷
+   - CodeDeploy Application
+   - Jenkins(+ AWS CodeDeploy Plugin)가 설치된 서버 1대 (CodeDeploy에 접근 가능한)
+   
+- [**출처 - MSA를 위한 Kubernetes 세팅과 CI/CD Pipeline 구성, 그리고 Monitoring 시스템 구축/방신철님**](https://medium.com/finda-tech/finda-msa%EB%A5%BC-%EC%9C%84%ED%95%9C-kubernetes-%EC%84%B8%ED%8C%85%EA%B3%BC-ci-cd-pipeline-%EA%B5%AC%EC%84%B1-%EA%B7%B8%EB%A6%AC%EA%B3%A0-monitoring-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95-2-ef29380ec474)
+
+#### **구축 인프라 (Case #2)**
+
+<img title="CI/CD" src="./images/devops/CI_CD_Infra_Argo_AWS.png" alt="CI/CD" width="1000px">
+
+- 쿠버네티스 클러스터 구축
+   - `AWS EKS` 서비스 활용
+
+- CI/CD 파이프라인 구축
+   - `Jenkins`, `Argo CD`, `GitOps` & `Helm`
+   
+- 모니터링 환경 구축
+   - 어플리케이션 모니터링 : `Fluentd` + `Elasticsearch` + `Kibana` → `Slack`
+   - 인프라 스트럭쳐 모니터링 : `Cloudwatch` + `Lambda` → `Slack`
+   - 배포 모니터링 : `Jenkins` & `Argo CD Notification` → `Slack`
+
