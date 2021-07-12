@@ -1,17 +1,9 @@
 로컬 환경에 자동 배포 서버 구축하기
 =====
 
-- **환경**
-
-   - Docker Desktop - [https://docs.docker.com/docker-for-windows/install/](https://docs.docker.com/docker-for-windows/install/)
-   - Kitematic - [https://github.com/docker/kitematic/releases](https://github.com/docker/kitematic/releases)
-   - IntelliJ IDEA 2021.1.3 - [Ultimate Edition](https://www.jetbrains.com/ko-kr/idea/download)
-   - Jenkins - [https://www.jenkins.io/](https://www.jenkins.io/)
-   - Github - [https://github.com/](https://github.com/)
+#### **구축 인프라**
 
 - [**출처 - 로컬 PC에 CI/CD 구축하기 (Jenkins, Ngrok, docker)/전준엽님**](https://galid1.tistory.com/743)
-
-- **구축 인프라**
 
    - jenkins를 통해 **CI (Test와 Build 자동화)**, plugin과 script를 통해 **CD (배포 자동화)** 구축
 
@@ -21,6 +13,14 @@
    1. develop server에서 code push
    1. local server의 jenkins에서 github로부터 webhook을 받으면 이를 알아차리고 코드를 다운받고, test & build
    1. jenkins plugin (publish over ssh)를 이용해 배포서버에 자동으로 전달
+
+- **환경**
+
+   - Docker Desktop - [https://docs.docker.com/docker-for-windows/install/](https://docs.docker.com/docker-for-windows/install/)
+   - Kitematic - [https://github.com/docker/kitematic/releases](https://github.com/docker/kitematic/releases)
+   - IntelliJ IDEA 2021.1.3 - [Ultimate Edition](https://www.jetbrains.com/ko-kr/idea/download)
+   - Jenkins - [https://www.jenkins.io/](https://www.jenkins.io/)
+   - Github - [https://github.com/](https://github.com/)
 
 - **Step 1 _ < Jenkins 설치 >**
 
@@ -53,9 +53,9 @@
 AWS 환경에 자동 배포 서버 구축하기
 =====
 
-- [**출처 - Jenkins와 CodeDeploy를 이용한 AWS에 CI/CD 구축하기/전준엽님**](https://galid1.tistory.com/746) 
-
 #### **구축 인프라 (Case #1)**
+
+- [**출처 - Jenkins와 CodeDeploy를 이용한 AWS에 CI/CD 구축하기/전준엽님**](https://galid1.tistory.com/746) 
 
 <img title="CI/CD" src="./images/devops/CI_CD_Infra_CodeDeploy_AWS.png" alt="CI/CD" width="1000px">
 
@@ -65,10 +65,10 @@ AWS 환경에 자동 배포 서버 구축하기
    - S3 버킷
    - CodeDeploy Application
    - Jenkins(+ AWS CodeDeploy Plugin)가 설치된 서버 1대 (CodeDeploy에 접근 가능한)
-   
-- [**출처 - MSA를 위한 Kubernetes 세팅과 CI/CD Pipeline 구성, 그리고 Monitoring 시스템 구축/방신철님**](https://medium.com/finda-tech/finda-msa%EB%A5%BC-%EC%9C%84%ED%95%9C-kubernetes-%EC%84%B8%ED%8C%85%EA%B3%BC-ci-cd-pipeline-%EA%B5%AC%EC%84%B1-%EA%B7%B8%EB%A6%AC%EA%B3%A0-monitoring-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95-2-ef29380ec474)
 
 #### **구축 인프라 (Case #2)**
+
+- [**출처 - MSA를 위한 Kubernetes 세팅과 CI/CD Pipeline 구성, 그리고 Monitoring 시스템 구축/방신철님**](https://medium.com/finda-tech/finda-msa%EB%A5%BC-%EC%9C%84%ED%95%9C-kubernetes-%EC%84%B8%ED%8C%85%EA%B3%BC-ci-cd-pipeline-%EA%B5%AC%EC%84%B1-%EA%B7%B8%EB%A6%AC%EA%B3%A0-monitoring-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95-2-ef29380ec474)
 
 <img title="CI/CD" src="./images/devops/CI_CD_Infra_Argo_AWS.png" alt="CI/CD" width="1000px">
 
