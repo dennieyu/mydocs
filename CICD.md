@@ -66,6 +66,11 @@ AWS 환경에 자동 배포 서버 구축하기
    - CodeDeploy Application
    - Jenkins(+ AWS CodeDeploy Plugin)가 설치된 서버 1대 (CodeDeploy에 접근 가능한)
 
+- 구성 요소   
+   - [**AWS CodeDeploy**](https://docs.aws.amazon.com/ko_kr/codedeploy/latest/userguide/welcome.html)
+   - [**AWS SNS**](https://docs.aws.amazon.com/ko_kr/sns/latest/dg/welcome.html)
+   - [**AWS Lambda**](https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/welcome.html)
+   
 #### **구축 인프라 (Case #2)**
 
 - [**출처 - MSA를 위한 Kubernetes 세팅과 CI/CD Pipeline 구성, 그리고 Monitoring 시스템 구축/방신철님**](https://medium.com/finda-tech/finda-msa%EB%A5%BC-%EC%9C%84%ED%95%9C-kubernetes-%EC%84%B8%ED%8C%85%EA%B3%BC-ci-cd-pipeline-%EA%B5%AC%EC%84%B1-%EA%B7%B8%EB%A6%AC%EA%B3%A0-monitoring-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95-2-ef29380ec474)
@@ -77,9 +82,12 @@ AWS 환경에 자동 배포 서버 구축하기
 
 - CI/CD 파이프라인 구축
    - `Jenkins`, `Argo CD`, `GitOps` & `Helm`
-   
+
+- 구성 요소
+   - [**HELM**](https://helm.sh/) - The package manager for Kubernetes
+   - [**Argo CD**](https://argoproj.github.io/argo-cd/getting_started/) - A declarative, GitOps continuous delivery tool for Kubernetes
+
 - 모니터링 환경 구축
    - 어플리케이션 모니터링 : `Fluentd` + `Elasticsearch` + `Kibana` → `Slack`
    - 인프라 스트럭쳐 모니터링 : `Cloudwatch` + `Lambda` → `Slack`
    - 배포 모니터링 : `Jenkins` & `Argo CD Notification` → `Slack`
-
