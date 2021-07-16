@@ -57,3 +57,4 @@
 1. [**Data Cleaning**](https://www.kaggle.com/learn/data-cleaning) - Kaggle 링크
 1. [**Feature Engineering**](https://www.kaggle.com/learn/feature-engineering) - Kaggle 링크
 1. [**Intro to Deep Learning**](https://www.kaggle.com/learn/intro-to-deep-learning) - Kaggle 링크
+1. [**EDA**](./EDA.md) - 탐색적 자료 분석
