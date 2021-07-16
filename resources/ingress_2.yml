@@ -1,0 +1,59 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: whoami-v2
+  annotations:
+    ingress.kubernetes.io/rewrite-target: "/"
+    ingress.kubernetes.io/ssl-redirect: "false"
+spec:
+  rules:
+  - host: v2.whoami.13.125.41.102.sslip.io
+    http:
+      paths: 
+      - path: /
+        backend:
+          serviceName: whoami-v2
+          servicePort: 4567
+
+---
+
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: whoami-v2
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      type: app
+      service: whoami
+      version: v2
+  template:
+    metadata:
+      labels:
+        type: app
+        service: whoami
+        version: v2
+    spec:
+      containers:
+      - name: whoami
+        image: subicura/whoami:2
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 4567
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: whoami-v2
+spec:
+  ports:
+  - port: 4567
+    protocol: TCP
+  selector:
+    type: app
+    service: whoami
+    version: v2
