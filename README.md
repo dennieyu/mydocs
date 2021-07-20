@@ -3,6 +3,7 @@
 
 ## Ops
 1. [**네트워크파라미터**](./네트워크파라미터.md) - 설정
+1. [**메모리파라미터**](./메모리파라미터.md) - 설정
 1. [**DNS**](./DNS.md) - 개념
 1. [**OS**](./os.md) - 배포본 계열
 1. [**Program vs Process vs Thread**](./ProcessVsThread.md) - 개념
