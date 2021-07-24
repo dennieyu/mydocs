@@ -855,6 +855,25 @@ object LearnScala {
         println(s"⑤ $p5") // 오버라이드된 toString형태로 출력
     }
 }
+
+// ① 단순한 클래스
+class Person1(fname:String, lname:String)
+
+// ② 메소드를 가지는 클래스
+class Person2(fname:String, lname:String){  
+    def greet = s"${lname}${fname}님 안녕하세요!" // public한 method
+}
+
+// ③ public한 val(read only) 필드
+class Person3(fname:String, lname:String){  
+    val fullName = s"${lname}${fname}" // public한 val(read only) 필드
+    def greet = s"${fullName}님 안녕하세요!" // public한 method
+}
+
+/* ④ 
+ * val로 선언된 fname는 getter가 자동으로 생성되고
+ * var로 선언된 lname은 getter와 setter가 자동으로 생성 */
+class Person4(val fname:String, var lname:String)
 ```
 
 #### getter와 setter
@@ -872,6 +891,8 @@ SPerson.scala를 보면 getName과 setName이라는 메소드를 가지는 클�
 
 코드
 ```
+JPerson.scala
+
 // 자바 스타일 클래스
 class JPerson() {  
     var _name: String = null  
@@ -888,4 +909,30 @@ class JPerson() {
     def getName() = name  
     def setName(name:String) = this.name = name  
 }
+
+
+LearnScala.scala
+
+object LearnScala {
+    def main(args: Array[String]): Unit = {        
+        val jp = new JPerson("자바 스타일")  
+        val sp = new SPerson("스칼라 스타일")
+        
+        println(jp.name)  
+        println(sp.name)  
+        
+        jp.name += " 싫어요!"  
+        sp.name += " 좋아요!"  
+        
+        println(jp.getName)  
+        println(sp.getName)
+    }
+}
+
+SPerson.scala
+
+// 스칼라에서는 이렇게 간단하게 만들 수 있습니다.
+import beans._  
+class SPerson(@BeanProperty var name:String)  
+// @BeanProperty는 필수가 아닙니다. 자바 스타일의 getter와 setter가 필요한 경우에만 사용하세요.
 ```
