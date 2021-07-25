@@ -21,13 +21,16 @@ object LearnScala {
 
 설명
 ```
-스칼라에서 1(Int 리터럴)과 같은 원시 타입(Primitive)은 객체(Object)로 취급됩니다. 그래서 +와 같은 연산자는 사실 (1)이라는 원시 타입 객체의 메소드인데요.
+스칼라에서 1(Int 리터럴)과 같은 원시 타입(Primitive)은 객체(Object)로 취급됩니다. 
+그래서 +와 같은 연산자는 사실 (1)이라는 원시 타입 객체의 메소드인데요.
 1 + 2라는 식은 1이라는 객체에 +라는 메소드를 호출하는 것이고 인자로 2가 전달되는 겁니다.
 
-스칼라에서는 +-*/같은 수학 연산을 지원하기 위해 연산자 메소드들에는 우선순위를 매기고 있습니다. +와 *를 순서대로 호출하더라도 *가 먼저 수행되어야 하기 때문이지요.
+스칼라에서는 +-*/같은 수학 연산을 지원하기 위해 연산자 메소드들에는 우선순위를 매기고 있습니다. 
++와 *를 순서대로 호출하더라도 *가 먼저 수행되어야 하기 때문이지요.
 이와 같은 표현 방식은 연산자 표기방식(Operator notation) 또는 infix 표기방식이라고 합니다.
 
-스칼라의 원시 타입은 스칼라에서 객체로 취급되지만, 컴파일 이후에는 성능을 위해 자바의 원시 타입을 이용합니다.(자바의 원시 타입을 쓸 수 있는 경우에 만요)
+스칼라의 원시 타입은 스칼라에서 객체로 취급되지만, 컴파일 이후에는 성능을 위해 자바의 원시 타입을 이용합니다.
+(자바의 원시 타입을 쓸 수 있는 경우에 만요)
 ```
 
 코드
@@ -35,7 +38,7 @@ object LearnScala {
 object LearnScala {
     def main(args: Array[String]): Unit = {
         println( 1 + 2 )
-        println( 1.+(2) )
+        println( (1).+(2) )
     }
 }
 ```
@@ -239,14 +242,19 @@ object LearnScala {
 // 이 함수의 타입은 두 개의 Int형 매개변수를 받아 그 합을 Int를 리턴하는 (Int, Int) => Int입니다.
 (x: Int, y: Int) => x + y
 
-익명 함수는 타입을 가지는데요. 예를 들어 다음 코드의 doWithOneAndTwo를 보면 (Int, Int) => (Int)와 같은 타입의 익명 함수만 받아들입니다.
+익명 함수는 타입을 가지는데요. 예를 들어 다음 코드의 doWithOneAndTwo를 보면 
+(Int, Int) => (Int)와 같은 타입의 익명 함수만 받아들입니다.
 따라서 코드 13번째 줄과 같이 (x, y) => x + y와 같은 익명 함수를 매개변수로 사용할 수 있습니다.
-여기서 x와 y의 타입을 지정하지 않고 생략했는데요. 컴파일러가 코드 4번째 줄을 보고 타입을 알 수 있기 때문입니다.
+여기서 x와 y의 타입을 지정하지 않고 생략했는데요. 
+컴파일러가 코드 4번째 줄을 보고 타입을 알 수 있기 때문입니다.
 
-추가로 더 짧게 변수명을 생략할 수도 있습니다. x와 y가 익명 함수의 Body에서 딱 한 번만 사용된다면 _로 대체할 수 있는데요. 익명 함수의 Body에 나타나는 _의 순서는 매개변수에 정의된 순서대로 입니다.
+추가로 더 짧게 변수명을 생략할 수도 있습니다. 
+x와 y가 익명 함수의 Body에서 딱 한 번만 사용된다면 _로 대체할 수 있는데요. 
+익명 함수의 Body에 나타나는 _의 순서는 매개변수에 정의된 순서대로 입니다.
 예를 들어 _ / _는 x/y와 같습니다.
 
-하지만 만약 y/x처럼 순서를 바꿔서 표현하고 싶으면 까다로워지는데요. (1/_)*_라고 표현해야겠지요. (1/x)*y는 y/x이니까요.
+하지만 만약 y/x처럼 순서를 바꿔서 표현하고 싶으면 까다로워지는데요. 
+(1/_)*_라고 표현해야겠지요. (1/x)*y는 y/x이니까요.
 ```
 
 코드
@@ -279,10 +287,12 @@ object LearnScala {
 ```
 add1은 메소드 정의 강의에서 살펴본 대로 메소드가 한 줄일 경우 중괄호를 생략한 형태입니다.
 add2는 익명 함수를 상수 add2에 저장하고 있습니다.
-add3은 _를 이용했는데요. 첫 번째 _자리에 첫 번째 매개변수가 대입되고, 두 번째 _자리에 두 번째 매개변수가 대입됩니다.
+add3은 _를 이용했는데요. 첫 번째 _자리에 첫 번째 매개변수가 대입되고, 
+두 번째 _자리에 두 번째 매개변수가 대입됩니다.
 add4와 같이 표현할 수도 있지만 자주 사용하는 방법은 아닙니다.
 
-_를 이용한 함수의 표기 방식은 익명 함수를 고계 함수(Higher order function)에 매개변수로 전달하는 경우에 유용하게 사용할 수 있습니다.
+_를 이용한 함수의 표기 방식은 익명 함수를 고계 함수(Higher order function)에 
+매개변수로 전달하는 경우에 유용하게 사용할 수 있습니다.
 ```
 
 코드
@@ -319,8 +329,10 @@ object LearnScala {
 t1과 같이 튜플은 여러 타입의 객체를 담을 수 있습니다.
 t1을 줄여서 t2와 같이 많이 사용합니다
 
-튜플은 내부적으로 담고 있는 객체의 수에 따라 다른 클래스로 구현되는데요. t1과 같이 3개의 객체를 담고 있으면 Tuple3 클래스를 이용하게 됩니다. 
-Tuple1부터 Tuple22까지 사용할 수 있고 그 이상을 쓰려면 컬렉션과 같은 다른 자료구조를 사용해야 합니다.
+튜플은 내부적으로 담고 있는 객체의 수에 따라 다른 클래스로 구현되는데요. 
+t1과 같이 3개의 객체를 담고 있으면 Tuple3 클래스를 이용하게 됩니다. 
+Tuple1부터 Tuple22까지 사용할 수 있고 그 이상을 쓰려면 
+컬렉션과 같은 다른 자료구조를 사용해야 합니다.
 
 튜플의 값에 접근하려면 ._1, ._2와 같은 메소드를 사용하면 됩니다.
 ```
@@ -420,7 +432,8 @@ object LearnScala {
 
 설명
 ```
-for문에 여러 개의 range를 세미콜론으로 구분해서 적어주면 for문을 중첩해서 사용한 것과 같은 효과입니다.
+for문에 여러 개의 range를 세미콜론으로 구분해서 적어주면 
+for문을 중첩해서 사용한 것과 같은 효과입니다.
 ```
 
 코드
@@ -483,11 +496,14 @@ object LearnScala {
 ```
 배열은 Array(element1, element2, ...)와 같이 만들 수 있습니다.
 
-스칼라의 배열은 자바의 배열에 대응하는 개념입니다. 예를 들어 자바에서 int[]는 스칼라에서 Array[Int]와 같습니다.
+스칼라의 배열은 자바의 배열에 대응하는 개념입니다. 
+예를 들어 자바에서 int[]는 스칼라에서 Array[Int]와 같습니다.
 
-스칼라의 배열은 mutable입니다. 사이즈를 변경할 수 있다는 의미가 아니라 들어있는 값을 변경할 수 있다는 의미의 mutable입니다.
+스칼라의 배열은 mutable입니다. 
+사이즈를 변경할 수 있다는 의미가 아니라 들어있는 값을 변경할 수 있다는 의미의 mutable입니다.
 
-배열은 그냥 출력하면 배열의 내용을 출력해 주지 않습니다. 내용을 출력하려면 .mkString(",")과 같은 메소드를 이용해야 합니다.
+배열은 그냥 출력하면 배열의 내용을 출력해 주지 않습니다. 
+내용을 출력하려면 .mkString(",")과 같은 메소드를 이용해야 합니다.
 ```
 
 코드
@@ -548,8 +564,10 @@ object LearnScala {
 ```
 리스트는 List(element1, element2, ...)와 같이 생성합니다.
 
-스칼라의 기본 List는 scala.collection.immutable.List이므로 값을 변경할 수 없는 속성을 가지고 있습니다. 
-즉, 리스트에 값을 추가하거나 제거하는 작업은 원래 리스트에 반영되는 게 아닙니다. 해당 변경사항을 반영한 새로운 리스트를 만들어내는 방식으로 동작합니다.
+스칼라의 기본 List는 scala.collection.immutable.List이므로 
+값을 변경할 수 없는 속성을 가지고 있습니다. 
+즉, 리스트에 값을 추가하거나 제거하는 작업은 원래 리스트에 반영되는 게 아닙니다. 
+해당 변경사항을 반영한 새로운 리스트를 만들어내는 방식으로 동작합니다.
 
 기본 List는 Linked list로 구현됩니다.
 ```
@@ -596,7 +614,8 @@ Set은 Set(element1, element2, ...)와 같이 생성합니다.
 
 스칼라에서 기본 Set은 Predef.Set입니다.
 
-Set은 크기가 4일 때까지는 크기에 따라 별도 클래스가 있습니다. Set1, Set2, Set3, Set4인데요. 구성요소가 4개보다 많아지면 HashSet으로 구현됩니다.
+Set은 크기가 4일 때까지는 크기에 따라 별도 클래스가 있습니다. 
+Set1, Set2, Set3, Set4인데요. 구성요소가 4개보다 많아지면 HashSet으로 구현됩니다.
 
 Set은 집합에 대응하는 개념으로 같은 값을 추가하면 기존 값을 덮어쓰게 되고, 순서가 보장되지 않습니다.
 ```
@@ -647,7 +666,8 @@ Map은 Map(key1 -> value1, key2 -> value2, ...)와 같이 생성합니다.
 
 스칼라에서 기본 Map은 Predef.Map(scala.collection.immutable.Map)입니다.
 
-Map도 Set과 마찬가지로 구성요소가 4개일 때까지는 Map1, Map2, Map3, Map4라는 별도 클래스로 구현되지만 더 많아지면 HashMap으로 구현됩니다.
+Map도 Set과 마찬가지로 구성요소가 4개일 때까지는 Map1, Map2, Map3, Map4라는 
+별도 클래스로 구현되지만 더 많아지면 HashMap으로 구현됩니다.
 
 키는 중복할 수 없으며 Set와 마찬가지로 순서가 보장되지 않습니다.
 ```
@@ -693,7 +713,8 @@ object LearnScala {
 
 설명
 ```
-Array, List, Set, Map의 구성요소는 어떤 타입이든 사용할 수 있지만, 최종 타입은 공통으로 상속받는 타입 중 최상위 타입으로 결정됩니다.
+Array, List, Set, Map의 구성요소는 어떤 타입이든 사용할 수 있지만, 
+최종 타입은 공통으로 상속받는 타입 중 최상위 타입으로 결정됩니다.
 ```
 
 코드
@@ -723,7 +744,8 @@ object LearnScala {
 
 설명
 ```
-스칼라는 변경할 수 없는(immutable) Collection을 사용하는 것을 권장합니다. 그래서 기본 Collection이 immutable입니다.
+스칼라는 변경할 수 없는(immutable) Collection을 사용하는 것을 권장합니다. 
+그래서 기본 Collection이 immutable입니다.
 
 하지만 꼭 필요할 경우 변경할 수 있는(mutable) collection을 사용할 수 있습니다.
 
@@ -769,8 +791,10 @@ object LearnScala {
 
 설명
 ```
-변경할 수 없는(immutable) Collection이 var로 선언된 경우에 Collection에 +=연산자나 -+연산자를 사용할 수 있습니다.
-하지만 Collection 자체가 변경할 수 없는 형태이므로 이때는 변경사항을 반영한 새로운 Collection이 만들어져서 var로 선언된 변수에 저장됩니다.
+변경할 수 없는(immutable) Collection이 var로 선언된 경우에 
+Collection에 +=연산자나 -+연산자를 사용할 수 있습니다.
+하지만 Collection 자체가 변경할 수 없는 형태이므로 
+이때는 변경사항을 반영한 새로운 Collection이 만들어져서 var로 선언된 변수에 저장됩니다.
 
 변경할 수 있는(mutable) Collection의 경우에는 +=나 -=연산자가 collection의 메소드로 동작합니다.
 ```
@@ -804,23 +828,28 @@ object LearnScala {
 
 설명
 ```
-스칼라에서는 클래스를 아주 짧은 코드로도 만들 수 있는데요. 클래스를 선언하는 부분이 기본 생성자(constructor)의 역할도 하게 됩니다.
+스칼라에서는 클래스를 아주 짧은 코드로도 만들 수 있는데요. 
+클래스를 선언하는 부분이 기본 생성자(constructor)의 역할도 하게 됩니다.
 
-Person1.scala파일을 보세요. 이렇게 기본 생성자에 매개변수를 넣으면 fname과 lname이라는 이름을 가지는 private 변수가 생깁니다.
+Person1.scala파일을 보세요. 
+이렇게 기본 생성자에 매개변수를 넣으면 fname과 lname이라는 이름을 가지는 private 변수가 생깁니다.
 
 Person2.scala에서는 메소드를 정의하는 방법을 확인할 수 있습니다.
 
 Person3.scala에서는 필드를 선언하는 방법을 확인할 수 있습니다.
 
-Person4.scala처럼 매개변수를 val로 선언하면 해당 이름을 가지는 변수(private)와 public getter메소드를 생성합니다.
-또 var로 생성자의 매개변수를 선언하면 해당 이름을 가지는 변수(private)와 public getter, setter메소드를 생성합니다.
-를 확인하세요.
+Person4.scala처럼 매개변수를 val로 선언하면 
+해당 이름을 가지는 변수(private)와 public getter메소드를 생성합니다.
+또 var로 생성자의 매개변수를 선언하면 
+해당 이름을 가지는 변수(private)와 public getter, setter메소드를 생성합니다.
 
 스칼라에서는 명시적으로 정의되지 않으면 모두 public으로 간주합니다.
 
 주의
-private 변수의 이름과 getter, setter가 모두 같은 이름을 가지는 경우를 직접 코드로 구현할 수는 없습니다.
-getter와 setter를 사용하기 위해서는 private 변수의 이름은 다르게 지정해야 하는데요. 메소드명과 구분하기 위해 _를 변수명 앞에 붙이기도 합니다.
+private 변수의 이름과 getter, setter가 
+모두 같은 이름을 가지는 경우를 직접 코드로 구현할 수는 없습니다.
+getter와 setter를 사용하기 위해서는 private 변수의 이름은 다르게 지정해야 하는데요. 
+메소드명과 구분하기 위해 _를 변수명 앞에 붙이기도 합니다.
 ```
 
 코드
@@ -883,22 +912,24 @@ class Person4(val fname:String, var lname:String)
 자바와 달리 스칼라에서는 변수(val, var)와 메소드(def)는 같은 이름을 사용할 수 없습니다. 
 예를 들어 자바에서는 int name;이라는 필드와 int name(){ return 0; }이라는 메소드가 
 한 클래스에 있을 수 있지만, 스칼라에서는 안 됩니다.
-그래서 JPerson.scala를 보면 필드 이름은 _name으로, setter는 name_으로, getter는 name으로 정의하고 있습니다.
+그래서 JPerson.scala를 보면 필드 이름은 _name으로, 
+setter는 name_으로, getter는 name으로 정의하고 있습니다.
 
 자바 스타일의 getter와 setter가 필요하면 @BeanProperty를 활용하면 되는데요. 
-SPerson.scala를 보면 getName과 setName이라는 메소드를 가지는 클래스를 한 줄로 간단히 만들고 있습니다.
+SPerson.scala를 보면 getName과 setName이라는 메소드를 가지는 클래스를 
+한 줄로 간단히 만들고 있습니다.
 ```
 
 코드
 ```
 JPerson.scala
-
+-----
 // 자바 스타일 클래스
 class JPerson() {  
     var _name: String = null  
     def this(_name:String) = {  
         this()  
-            this._name = _name  
+        this._name = _name  
     }  
     
     // 스칼라 스타일의 getter, setter   
@@ -912,7 +943,7 @@ class JPerson() {
 
 
 LearnScala.scala
-
+-----
 object LearnScala {
     def main(args: Array[String]): Unit = {        
         val jp = new JPerson("자바 스타일")  
@@ -930,7 +961,7 @@ object LearnScala {
 }
 
 SPerson.scala
-
+-----
 // 스칼라에서는 이렇게 간단하게 만들 수 있습니다.
 import beans._  
 class SPerson(@BeanProperty var name:String)  

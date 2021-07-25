@@ -1,7 +1,7 @@
 Function
 =====
 
-### Array
+## Array
 
 #### `push(v)`
 
@@ -21,7 +21,7 @@ console.log(fruits);
 ["Apple", "Banana", "Orange", "Strawberry", "Grape"]
 ```
 
-##### `pop()`
+#### `pop()`
 
 - 배열의 마지막 아이템을 제거한다
 
@@ -111,15 +111,15 @@ console.log(fruits);
 ["Apple", "Banana", "Orange", "Strawberry"]
 ```
 
-### Stack
+## Stack
 
-`array.push(v)`, `array.pop()`
+#### `array.push(v)`, `array.pop()`
 
-### Queue
+## Queue
 
-`array.push(v)`, `array.shift()`
+#### `array.push(v)`, `array.shift()`
 
-### Stream (ES6)
+## Stream (ES6)
 
 #### `map(currenValue, index, array)`
 - 수집하기
@@ -132,6 +132,7 @@ console.log(fruits);
 - `callback(accumulator, currentValue, currentIndex, array)`
 
 
+
 Local Variable Declarations
 =====
 
@@ -140,6 +141,7 @@ Local Variable Declarations
 - The `var` keyword must not be used.
 
 [**Google JavaScript Style Guide**](https://google.github.io/styleguide/jsguide.html)
+
 
 
 Memory
@@ -153,7 +155,8 @@ Memory
 #### 변수 참조 시
    <img title="js" src="../images/js/js_memory_2.png" alt="js" width="500px">
 
-#### 변수 재할당 및 가비지 컬렉터
+#### 변수 재할당 및 가비지 컬렉터 (1/2)
    <img title="js" src="../images/js/js_memory_3.png" alt="js" width="1000px">
-   
+
+#### 변수 재할당 및 가비지 컬렉터 (2/2)   
    <img title="js" src="../images/js/js_memory_4.png" alt="js" width="1000px">
