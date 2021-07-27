@@ -126,6 +126,7 @@ git tag 1.0.0 1b2e1d63ff
 ```
 - `1b2e1d63ff` 부분은 꼬리표가 가리킬 확정본 식별자임. `git log` 명령으로 확정본 식별자를 얻을 수 있음.
 
+
 Git-flow Workflow
 =====
 
@@ -141,7 +142,7 @@ git branch develop # 생성
 git push -u origin develop # 원격 브랜치 연결
 ```
 
-<img title="gitflow" src="./images/git/develop-branch.jpeg" alt="develop" width="600px">
+<img title="git-flow" src="./images/git/develop-branch.jpeg" alt="develop" width="600px">
 
 ### Feature Branches
 ```
@@ -152,7 +153,7 @@ git checkout develop # 전환
 git merge feature_branch # 병합
 ```
 
-<img title="gitflow" src="./images/git/feature-branch.jpeg" alt="feature" width="600px">
+<img title="git-flow" src="./images/git/feature-branch.jpeg" alt="feature" width="600px">
 
 ### Release Branches
 ```
@@ -168,7 +169,7 @@ git merge release/0.1.0 # 병합
 git branch -d release/0.1.0 # 제거
 ```
 
-<img title="gitflow" src="./images/git/release-branch.jpeg" alt="release" width="600px">
+<img title="git-flow" src="./images/git/release-branch.jpeg" alt="release" width="600px">
 
 ### Hotfix Branches
 ```
@@ -184,33 +185,50 @@ git merge hotfix_branch # 병합
 git branch -D hotfix_branch # 제거
 ```
 
-<img title="gitflow" src="./images/git/hotfix-branch.jpeg" alt="hotfix" width="600px">
+<img title="git-flow" src="./images/git/hotfix-branch.jpeg" alt="hotfix" width="600px">
+
+
+Github-flow Workflow
+=====
+
+`master` 브랜치만 존재
+
+<img title="github-flow" src="./images/git/github-flow.png" alt="github-flow" width="500px">
+
+1. 기능개발, 버그 fix 등의 이유로 branch 생성 
+1. 개발, 커밋
+1. PR 생성
+1. 리뷰
+1. 테스트 환경 배포
+1. master merge 후 push 하고 운영 환경 배포
+
 
 설치 프로그램
 =====
 - [**OS X용 git 다운로드**](http://git-scm.com/download/mac)
 - [**Windows용 git 다운로드**](https://gitforwindows.org/)
 
+
 Commit 메시지 포맷
 =====
 - 포맷
 
 ```
-{type}/#{task/issue-id} - 커밋한 내용 설명
+{type}/#{JIRA Issue Id} - 커밋한 내용 설명
 ```
 
 - 타입
 
 ```
 types = {
-  feat : 새로운 기능에 대한 커밋
-  fix : 버그 수정에 대한 커밋
-  build : 빌드 관련 파일 수정에 대한 커밋
-  chore : 그 외 자잘한 수정에 대한 커밋
-  ci : CI 관련 설정 수정에 대한 커밋
-  docs : 문서 수정에 대한 커밋
-  style : 코드 스타일 혹은 포맷 등에 관한 커밋
-  refactor :  코드 리팩토링에 대한 커밋
-  test : 테스트 코드 수정에 대한 커밋
+  feat:     새로운 기능에 대한 커밋
+  fix:      버그 수정에 대한 커밋
+  build:    빌드 관련 파일 수정에 대한 커밋
+  chore:    그 외 자잘한 수정에 대한 커밋
+  ci:       CI 관련 설정 수정에 대한 커밋
+  docs:     문서 수정에 대한 커밋
+  style:    코드 스타일 혹은 포맷 등에 관한 커밋
+  refactor: 코드 리팩토링에 대한 커밋
+  test:     테스트 코드 수정에 대한 커밋
 }
 ```
