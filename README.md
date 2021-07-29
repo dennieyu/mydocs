@@ -59,3 +59,5 @@
 1. [**Feature Engineering**](https://www.kaggle.com/learn/feature-engineering) - Kaggle 링크
 1. [**Intro to Deep Learning**](https://www.kaggle.com/learn/intro-to-deep-learning) - Kaggle 링크
 1. [**EDA**](./EDA.md) - 탐색적 자료 분석
+1. [**MDM**](./MDM.md) - 마스터데이터관리/데이터가버넌스
+
