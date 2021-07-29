@@ -1,23 +1,64 @@
 NoSQL
 =====
- - NoSQL [Not Only SQL] 
+ - NoSQL [Not Only SQL]
    - 스키마가 없다.
    - NoSQL은 가용성과 확장성이 높고, 고성능에 최적화된 비관계형 데이터베이스이다.
  - NoSQL 데이터베이스 타입
    - Key-value data stores
+      - DynamoDB
+      - Redis
+      - Memcached
+      - Hazelcast
+      - Oracle NoSQL Database
+      - Voldmorte
+      - Oracle Berkeley DB
    - Document stores
+      - DynamoDB
+      - MongoDB
+      - Azure Cosmos DB
+      - CouchDB
+      - MarkLogic
+      - OrientDB
    - Wide-column stores
+      - Cassandra
+      - HBase
+      - Google BigTable
+      - Vertica
+      - Druid
+      - Accumulo
+      - HyperTable
    - Graph stores
+      - Neo4j
+      - Blazegraph
+      - OrientDB
+      - AgensGraph (국내솔루션)
  - NoSQL 데이터베이스 장점
    - Scalability
    - Performance
    - High Availability
    - Global Availability
    - Flexible Data Modeling
+   
+`Redis`
+-----
 
-`DynamoDB`
+ - Redis는 키-값 형식으로 데이터를 저장하는 NoSQL 데이터베이스이다.
+ - Redis는 BSD에서 제공하는 오픈 소스 데이터베이스이다.
+ - Redis 는 원격 사전 서버를 의미한다. 키에는 키와 값이 문자열인 문자열 해시, 정렬된 문자열 집합, 저장된 집합 및 문자열 목록과 같은 많은 데이터 유형이 포함되어 있으므로 데이터 구조 서버라고도 한다.
+ - Redis에서 원자 연산을 수행 할 수 있다. Redis는 전체 데이터 세트를 메모리에 저장하므로 데이터를 디스크에 덤프하여 유지할 수 있다.
+ - Redis는 2 초마다 데이터를 디스크에 동기화하기 때문에 시스템이 실패하면 몇 초 동안만 데이터가 손실된다. 이를 유지하는 또 다른 방법은 각 명령을 로그에 추가하는 것이다. Redis는 마스터-슬레이브를 지원한다.
+
+
+`Amazon DynamoDB`
 -----
  - Key-value data stores for NoSQL
+ - Document stores for NoSQL
+ - 특정
+   - Amazon DynamoDB는 확장성이 뛰어난 문서 데이터베이스이다.
+   - 2012 년 Amazon에서 제공했다. 문서 저장소 및 키-값 저장소로 기본 데이터베이스 모델이 있다.
+   - 상업용 라이선스가 있다. 트랜잭션을 사용하고 ACID 속성을 따른다. 백업 시설이 있고 보안성이 높다.
+   - Amazon DynamoDB는 내구성 있고 강력한 데이터베이스이다.
+   - 하루에 엄청난 수의 요청을 처리 할 수 있으며 서버리스로 관리할 수 있다.
  - 테이블
    - 스키마가 없음. 데이터 형식을 미리 정의할 필요가 없음.
    - 테이블 크기 제한 없음.
@@ -61,29 +102,3 @@ NoSQL
  - 구조
 
    <img title="mongoDB" src="./images/db/mongodb_struct.png" alt="mongoDB" width="500px">
-
-Time Series DB
-=====
- - 데이터 특성 (정형/비정형)
-   - 시간 흐름에 따라 발생하는 로그, 이벤트 정보
-
- - 데이터 입력 위주
-   - 데이터 업데이트 없고 과거 데이터순 삭제
-
- - ID, 상태 정보 포함
-   - 해당 데이터 소소의 ID 및 상태 정보를 반드시 포함
-
- - 시간 데이터
-   - 시간을 기준으로 각종 통계, 분석 수행
-
- - 종류
-
-   <img title="timeseriesDB" src="./images/db/tsdb.png" alt="timeseriesDB" width="500px">
-
- - 시각화
-
-   <img title="timeseriesDB" src="./images/db/tsdb-example-path.png" alt="timeseriesDB" width="800px">
-
- - 데이터
-
-   <img title="timeseriesDB" src="./images/db/tsdb-example-rows.png" alt="timeseriesDB" width="400px">
