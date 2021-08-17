@@ -34,3 +34,6 @@ AWS Services
    - **`Route 53`**: EC2, ELB, S3, CloudFront와 연동 가능한 DNS(Domain Name System) 서비스로 가용성과 확장성이 뛰어남
    - **`ELB`**: ELB (Elastic Load Balancing)는 부하 분산과 고가용성을 제공하는 서비스로 고가의 L4/L7 장비를 구입 없이 부하 분산 기능을 사용
 
+EKS
+-----
+1. [**EKS**](./EKS.md) - Amazon Elastic Kubernetes Service (Amazon EKS)
