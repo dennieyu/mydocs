@@ -251,3 +251,27 @@ types = {
   test:     테스트 코드 수정에 대한 커밋
 }
 ```
+
+
+Pull Request(PR) 보내는 방법
+=====
+
+1. 기여하려는 저장소를 fork
+1. 내 컴퓨터에 저장소 clone
+   - fork로 생성한 본인 계정의 저장소에서 **git clone** or download 버튼을 누르고 표시되는 url을 복사
+   - `$ git clone https://github.com/<MY_ID>/<ORIGIN_REPO_NAME>.git`
+1. 원격 저장소 remote 설정
+   - clone 해 온 저장소에 원본 원격 저장소 설정. 즉, **내가 PR을 보낼 곳을 추가**
+   - `$ git remote add upstream(별명) https://github.com/<ORIGIN_OWNER_ID>/<ORIGIN_REPO_NAME>.git`
+1. PR용 branch 생성
+   - `$ git checkout -b <PR_BRANCH_NAME>`
+1. 코드 수정
+1. PR용 branch에 push
+   - `$ git push origin <PR_BRANCH_NAME>`
+1. 본인 계정의 github 사이트에 들어가서 **PR 생성**
+1. **PR 승인**이 되었다면 원본 원격 저장소와 동기화
+1. PR용 branch 삭제
+   - `$ git branch -D <PR_BRANCH_NAME>`
+   - `$ git push origin --delete <PR_BRANCH_NAME>`
+
+참조 - [**PR 보내는 방법/chanhuiseok님**](https://chanhuiseok.github.io/posts/git-3/)
