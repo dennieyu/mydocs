@@ -307,3 +307,9 @@ build 실행
 -----
 
 - 배포 자동화를 위해 laaC 툴인 Terraform 사용
+
+
+참고 강좌
+=====
+
+- [**Jenkins를 활용한 CI/CD/Tacademy**](https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=190)
