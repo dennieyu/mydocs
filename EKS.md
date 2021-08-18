@@ -1,6 +1,8 @@
 EKS 구성
 =====
 
+참조 - [**영상/이성미님**](https://www.youtube.com/watch?v=aU9G1p85c-k)
+
 1. Bastion Host 준비
 1. AWS CLI 설치
 1. eksctl 설치
@@ -79,7 +81,7 @@ AWS IAM 계정 (admin-user) 생성
    - 기존 정책(Attach existing policies directly): administratorAccess
    - 태그 추가(Add tags (optional)) - SKIP
    - 사용자 만들기(Create User) 버튼 클릭
-   - 사용자 생성되면 csv 다운로드 - 액세스ID / 시크릿엑세스키
+   - 사용자 생성되면 csv 다운로드 - 엑세스키ID / 시크릿엑세스키
 
 
 AWS IAM 계정 (admin-user) 등록 (/w Bastion Host)
@@ -141,7 +143,7 @@ $ eksctl create cluster \
 
 - [**참고 - AWS 가이드**](https://aws.amazon.com/ko/about-aws/whats-new/2021/02/amazon-eks-clusters-support-user-authentication-oidc-compatible-identity-providers/)
   - Amazon EKS 에서 `OpenID Connect (OIDC)` 호환 자격 증명 공급자를 Kubernetes 클러스터에 대한 사용자 인증 옵션으로 사용할 수 있다. 
-  - `OIDC` 인증을 사용하면 직원 계정의 생성, 활성화 및 비활성화에 대한 조직의 표준 절차를 사용하여 EKS 클러스터에 대한 사용자 액세스를 관리할 수 있다. 
+  - `OIDC` 인증을 사용하면 직원 계정의 생성, 활성화 및 비활성화에 대한 조직의 표준 절차를 사용하여 EKS 클러스터에 대한 사용자 엑세스를 관리할 수 있다. 
 
 - `aws-login-key`는 인스턴스 생성 시 인증키 생성했었음
 
