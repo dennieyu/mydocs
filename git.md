@@ -1,6 +1,20 @@
 GIT
 =====
 
+## GIT 이해하기
+
+- wd, index, head
+<img title="git-flow" src="./images/git/git_understanding_1.png" alt="develop" width="400px">
+
+- working directory, staging directory, repository
+<img title="git-flow" src="./images/git/git_understanding_2.png" alt="develop" width="400px">
+
+- git component
+<img title="git-flow" src="./images/git/git_component_arch.png" alt="develop" width="800px">
+
+- remote origin
+<img title="git-flow" src="./images/git/git_remote_repo.png" alt="develop" width="300px">
+
 ## 1. 최초 설정
 
 ### 사용자 정보 수정
