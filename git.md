@@ -1,6 +1,7 @@
 GIT
 =====
 
+
 ## GIT 이해하기
 
 - wd, index, head
@@ -12,8 +13,6 @@ GIT
 - git component
 <img title="git-flow" src="./images/git/git_component_arch.png" alt="develop" width="800px">
 
-- remote origin
-<img title="git-flow" src="./images/git/git_remote_repo.png" alt="develop" width="300px">
 
 ## 1. 최초 설정
 
@@ -33,6 +32,12 @@ git config --global --list # Global 설정 파일을 확인하고 싶다면
 git config --local --list # Local 설정 파일을 확인하고 싶다면
 git config --list # 모든 설정을 확인하고 싶으면
 ```
+
+### Alias
+```
+git config --global alias.adog "log --all --decorate --oneline --graph"
+```
+
 
 ## 2. 저장소 관리
 
@@ -65,11 +70,11 @@ git clone -b master https://github.com/id/project.git # git clone https://github
 git log
 ```
 
+
 ## 3. 파일 버전 관리
 
 ### 소스 추가 및 커밋
-```
-git add -A 
+``` 
 git add README.md
 git add .
 git commit -m "first commit"
@@ -80,21 +85,27 @@ git commit -m "first commit"
 git status
 ```
 
-### 원격지 브랜치에서 가져오기
+### 원격지 브랜치에서 가져오기 (1)
+```
+git fetch origin <branch_name>
+```
+
+### 원격지 브랜치에서 가져오기 (2)
 ```
 git pull origin <branch_name>
 ```
 
-### 원격지 브랜치에 반영하기
+### 원격지 브랜치에 반영하기 (1)
 ```
 git push origin <branch_name>
 ```
 
-### 수정된 브랜치를 원격지에 반영
+### 원격지 브랜치에 반영하기 (2)
 ```
 git push origin -u <new_name>
 ```
 - `-u` 옵션은 현재 브랜치를 자동으로 origin이라는 원격지 저장소의 브랜치에 연결. 연결 후 `git push`, `git pull` 단축 명령어 사용 가능함.
+
 
 ## 4. 브랜치 관리
 
@@ -104,16 +115,17 @@ git checkout -b <branch_name>
 ```
 - `-b` 옵션을 넣으면 브랜치 작성과 체크아웃을 한꺼번에 실행함.
 
-### 브랜치 리스트 동기화
+### 브랜치 병합
 ```
-git fetch -p
+git merge <branch_name>
 ```
-### 원격지 브랜치 삭제 (방법 #1)
+
+### 원격지 브랜치 삭제 (1)
 ```
 git push origin --delete <old_name>
 ```
 
-### 원격지 브랜치 삭제 (방법 #2)
+### 원격지 브랜치 삭제 (2)
 ```
 git branch -d <old_name>
 git push origin <old_name>
@@ -137,6 +149,16 @@ git branch -m <new_name>
 ### 브랜치 리스트 확인
 ```
 git branch -a
+```
+
+### 기타
+```
+git rebase master # base를 master로 re-base 한다
+git reset <option> <branch> # 커밋 취소 - branch 이후 기록을 없애자
+git revert <branch> # 커밋 취소 - 수정한 기록은 남기자
+git stash # 현재 작업하고 있는 작업을 따로 저장하기
+git stash list stash # 목록을 확인할 수 있다
+git stash apply # 가장 최근의 stash를 가져와 적용한다
 ```
 
 ### 꼬리표 달기
@@ -222,38 +244,7 @@ Github-flow Workflow
 1. master merge 후 push 하고 운영 환경 배포
 
 
-설치 프로그램
-=====
-- [**OS X용 git 다운로드**](http://git-scm.com/download/mac)
-- [**Windows용 git 다운로드**](https://gitforwindows.org/)
-
-
-Commit 메시지 포맷
-=====
-- 포맷
-
-```
-{type}/#{JIRA Issue Id} - 커밋한 내용 설명
-```
-
-- 타입
-
-```
-types = {
-  feat:     새로운 기능에 대한 커밋
-  fix:      버그 수정에 대한 커밋
-  build:    빌드 관련 파일 수정에 대한 커밋
-  chore:    그 외 자잘한 수정에 대한 커밋
-  ci:       CI 관련 설정 수정에 대한 커밋
-  docs:     문서 수정에 대한 커밋
-  style:    코드 스타일 혹은 포맷 등에 관한 커밋
-  refactor: 코드 리팩토링에 대한 커밋
-  test:     테스트 코드 수정에 대한 커밋
-}
-```
-
-
-Pull Request(PR) 보내는 방법
+Pull Request (PR) 보내는 방법
 =====
 
 1. 기여하려는 저장소를 fork
@@ -275,3 +266,41 @@ Pull Request(PR) 보내는 방법
    - `$ git push origin --delete <PR_BRANCH_NAME>`
 
 참조 - [**PR 보내는 방법/chanhuiseok님**](https://chanhuiseok.github.io/posts/git-3/)
+
+
+설치 프로그램
+=====
+- [**OS X용 git 다운로드**](http://git-scm.com/download/mac)
+- [**Windows용 git 다운로드**](https://gitforwindows.org/)
+- [**소스트리 다운로드**](https://www.sourcetreeapp.com/)
+
+
+Commit 메시지 포맷
+=====
+- 포맷
+
+```
+{type}/#{jira_no} - 개발 내용
+```
+
+- 타입
+
+```
+types = {
+  feat:     새로운 기능에 대한 커밋
+  fix:      버그 수정에 대한 커밋
+  build:    빌드 관련 파일 수정에 대한 커밋
+  chore:    그 외 자잘한 수정에 대한 커밋
+  ci:       CI 관련 설정 수정에 대한 커밋
+  docs:     문서 수정에 대한 커밋
+  style:    코드 스타일 혹은 포맷 등에 관한 커밋
+  refactor: 코드 리팩토링에 대한 커밋
+  test:     테스트 코드 수정에 대한 커밋
+}
+```
+
+
+참고 강좌
+=====
+
+- [**Git & GitHub Page/Tacademy**](https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=171)
