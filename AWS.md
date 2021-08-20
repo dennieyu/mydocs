@@ -35,12 +35,7 @@ AWS Services
    - **`ELB`**: ELB (Elastic Load Balancing)는 부하 분산과 고가용성을 제공하는 서비스로 고가의 L4/L7 장비를 구입 없이 부하 분산 기능을 사용
 
 
-EKS
------
-1. [**EKS**](./EKS.md) - Amazon Elastic Kubernetes Service (Amazon EKS)
-
-
-S3
+[S3](https://aws.amazon.com/ko/s3/)
 -----
 1. Simple Storage Service의 약자로 클라우드 스토리지
 1. 정적 웹사이트 코드 배포에 용이
@@ -48,14 +43,19 @@ S3
 1. AWS Cloudfront와 함께 사용해서 최적화 가능하고 DNS 관리도 가능
 
 
-ECR
+[EKS](https://aws.amazon.com/ko/eks/)
+-----
+1. [**EKS**](./EKS.md) - Amazon Elastic Kubernetes Service (Amazon EKS)
+
+
+[ECR](https://aws.amazon.com/ko/ecr/)
 -----
 1. Elastic Container Registry
 1. 도커 이미지를 저장하는 private repository
 1. 실제 프로덕션 환경에서는 container 기반의 배포 (ECS 등을 활용) 할 것이기 때문에 반드시 repository가 있어야 함
 
 
-ECS
+[ECS](https://aws.amazon.com/ko/ecs/)
 -----
 1. Elastic Container Service
 1. 도커 컨테이너 기반으로 서비스 운용을 가능하게 해주는 간단한 서비스
@@ -64,3 +64,31 @@ ECS
 1. 수많은 도커 컨테이너 서버를 띄우고 LB가 이를 로드 밸런싱 해줌
 1. fargate, ec2 모드가 있어서 docker container 리소스만 띄우거나 또는 물리적인 EC2 인스턴스를 클러스터로 구성 가능
 
+
+[Amazon CloudWatch](https://aws.amazon.com/ko/cloudwatch/)
+-----
+1. DevOps 엔지니어, 개발자, SRE(사이트 안정성 엔지니어) 및 IT 관리자를 위해 구축된 모니터링 및 관찰 기능 서비스
+1. 애플리케이션을 모니터링하고, 시스템 전반의 성능 변경 사항에 대응하며, 리소스 사용률을 최적화
+1. 운영 상태에 대한 통합된 보기를 확보하는 데 필요한 데이터와 실행 가능한 통찰력을 제공
+1. 로그, 지표 및 이벤트 형태로 모니터링 및 운영 데이터를 수집하여 AWS와 온프레미스 서버에서 실행되는 AWS 리소스, 애플리케이션 및 서비스에 대한 통합된 보기를 제공
+
+
+[Amazon SNS](https://aws.amazon.com/ko/sns/)
+-----
+1. 애플리케이션 간(A2A) 및 애플리케이션과 사용자 간(A2P) 통신 모두를 위한 완전관리형 메시징 서비스
+
+
+[Amazon SQS](https://aws.amazon.com/ko/sqs/)
+-----
+1. 마이크로 서비스, 분산 시스템 및 서버리스 애플리케이션을 쉽게 분리하고 확장할 수 있도록 지원하는 완전관리형 메시지 대기열 서비스
+
+
+[AWS Lambda](https://aws.amazon.com/ko/lambda/)
+-----
+1. 서버 프로비저닝 또는 관리, 워크로드 인식 확장 로직 생성, 이벤트 통합 유지, 또는 런타임 관리 없이 코드를 실행할 수 있는 서버리스 컴퓨팅 서비스
+1. 사실상 모든 유형의 애플리케이션이나 백엔드 서비스에 대한 코드를 별도의 관리 없이 실행할 수 있음
+
+
+[AWS CodeDeploy](https://aws.amazon.com/ko/codedeploy/)
+-----
+1. Amazon EC2, AWS Fargate, AWS Lambda 및 온프레미스 서버와 같은 다양한 컴퓨팅 서비스에 대한 소프트웨어 배포를 자동화하는 완전관리형 배포 서비스
