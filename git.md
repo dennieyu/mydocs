@@ -300,7 +300,67 @@ types = {
 ```
 
 
-참고 강좌
+그림으로 설명
 =====
 
-- [**Git & GitHub Page/Tacademy**](https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=171)
+- 출처 - [**Git & GitHub Page/Tacademy**](https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=171)
+
+- **파일 스테이지로 올리기 `git add [file]`**
+
+<img title="git-flow" src="./images/git2/git add [file].png" alt="develop">
+
+- **스테이지에 있는 내용 커밋 `git commit`**
+
+<img title="git-flow" src="./images/git2/git commit.png" alt="develop">
+
+- **원격 저장소와 연결 `git remote add origin`**
+
+<img title="git-flow" src="./images/git2/git remote add origin.png" alt="develop">
+
+- **원격 자장소로 올리기 `git push origin master`**
+
+<img title="git-flow" src="./images/git2/git push origin master.png" alt="develop">
+
+- **원격 자장소 다운받기 `git clone [url]`**
+
+<img title="git-flow" src="./images/git2/git clone [url].png" alt="develop">
+
+- **기능별로 개발하기 `git branch [name]`**
+
+<img title="git-flow" src="./images/git2/git branch [name].png" alt="develop">
+
+- **브랜치 이동하기 `git checkout [name]`**
+
+<img title="git-flow" src="./images/git2/git checkout [name].png" alt="develop">
+
+- **브랜치 합치기 `git merge [name]`**
+
+<img title="git-flow" src="./images/git2/git merge [name].png" alt="develop">
+
+- **브랜치 합치기 `git rebase master.png`**
+
+<img title="git-flow" src="./images/git2/git rebase master.png" alt="develop">
+
+- **브랜치 지우기 `git branch -d [name]`**
+
+<img title="git-flow" src="./images/git2/git branch -d [name].png" alt="develop">
+
+- **원격에서 기록 가져오기 `git fetch`**
+
+<img title="git-flow" src="./images/git2/git fetch.png" alt="develop">
+
+- **원격에서 가져오고 합치기 `git pull`**
+
+<img title="git-flow" src="./images/git2/git pull.png" alt="develop">
+
+- **실수한 커밋을 RESET `git reset [option] [branch]`**
+
+<img title="git-flow" src="./images/git2/git reset [option] [branch].png" alt="develop">
+
+- **실수한 커밋 남기기 `git revert [branch]`**
+
+<img title="git-flow" src="./images/git2/git revert [branch].png" alt="develop">
+
+- **현재 작업 보류 `git stash`**
+
+<img title="git-flow" src="./images/git2/git stash.png" alt="develop">
