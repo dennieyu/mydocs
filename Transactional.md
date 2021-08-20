@@ -36,7 +36,7 @@ propagation
 -----
 - **REQUIRED**
    - 디폴트 속성, 부모 트랜잭션 내에서 실행하며 부모 트랜잭션이 없을 경우 새로운 트랜잭션을 생성한다.
-- **SUPPORTS
+- **SUPPORTS**
    - 이미 시작된 트랜잭션이 있으면 참여하고 그렇지 않으면 트랜잭션 없이 진행하게 만든다. 
 - **REQUIRES_NEW**
    - 부모 트랜잭션을 무시하고 무조건 새로운 트랜잭션이 생성
@@ -60,7 +60,7 @@ propagation
 
 예제
 -----
-- REQUIRES 에서 REQUIRES_NEW 으로 수정
+- **REQUIRES** 에서 **REQUIRES_NEW** 으로 수정
 
 ```
 # 변경 전
