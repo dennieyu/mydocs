@@ -337,7 +337,7 @@ types = {
 
 <img title="git-flow" src="./images/git2/git merge [name].png" alt="develop">
 
-- **브랜치 합치기 `git rebase master.png`**
+- **브랜치 합치기 `git rebase master`**
 
 <img title="git-flow" src="./images/git2/git rebase master.png" alt="develop">
 
