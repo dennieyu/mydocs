@@ -309,11 +309,11 @@ types = {
 
 <img title="git-flow" src="./images/git2/git add [file].png" alt="develop">
 
-- **스테이지에 있는 내용 커밋 `git commit`**
+- **스테이지에 있는 내용 커밋 `git commit -m "간단한 설명"`**
 
 <img title="git-flow" src="./images/git2/git commit.png" alt="develop">
 
-- **원격 저장소와 연결 `git remote add origin`**
+- **원격 저장소와 연결 `git remote add origin [url]`**
 
 <img title="git-flow" src="./images/git2/git remote add origin.png" alt="develop">
 
