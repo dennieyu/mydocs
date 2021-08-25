@@ -46,6 +46,7 @@
 1. [**메시징기반서비스**](./Spring_Integration_202103.pdf) - Spring Integration
 1. [**테스트코드작성**](./테스트코드작성.md) - TDD
 1. [**Transactional**](./Transactional.md) - 트랜잭션 관리
+1. [**어플리케이션 설계**](./Application.md) - 어플리케이션 설계
 
 ## FE
 1. [**Angular**](./Angular_202012.pdf) - 앵귤러 개념
