@@ -17,7 +17,7 @@
 1. [**ELK Stack**](./ELK.md) - Elastic Stack 소개
 1. [**Metrics Stack**](./메트릭스스택.md) - 모니터링 구성
 1. [**Site Reliability Engineering**](./DevOpsVsSRE.md) - SRE 개념
-1. [**소프트웨어아키텍쳐**](./소프트웨어아키텍쳐.md) - 개념
+1. [**소프트웨어아키텍쳐**](./소프트웨어아키텍쳐.md) - 설계
 1. [**AWS**](./AWS.md) - 소개
 1. [**Jenkins**](./Jenkins.md) - 소개
 
@@ -46,7 +46,7 @@
 1. [**메시징기반서비스**](./Spring_Integration_202103.pdf) - Spring Integration
 1. [**테스트코드작성**](./테스트코드작성.md) - TDD
 1. [**Transactional**](./Transactional.md) - 트랜잭션 관리
-1. [**어플리케이션 설계**](./Application.md) - 어플리케이션 설계
+1. [**어플리케이션아키텍쳐**](./Application.md) - 설계
 
 ## FE
 1. [**Angular**](./Angular_202012.pdf) - 앵귤러 개념
