@@ -47,6 +47,7 @@
 1. [**테스트코드작성**](./테스트코드작성.md) - TDD
 1. [**Transactional**](./Transactional.md) - 트랜잭션 관리
 1. [**어플리케이션아키텍쳐**](./Application.md) - 설계
+1. [**Scala vs Kotlin**](./ScalaVsKotlin.md) - 개념
 
 ## FE
 1. [**Angular**](./Angular_202012.pdf) - 앵귤러 개념
