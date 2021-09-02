@@ -12,7 +12,6 @@
 
 <img title="application" src="./images/aa/mvc_pattern.png" alt="application" width="560px">
 
-
 - **메모리 캐시**
 
 <img title="application" src="./images/aa/cache.png" alt="application" width="600px">
@@ -44,6 +43,13 @@
 
 
 ## Software 아키텍쳐
+
+
+- **Proxy**
+
+   - Forward Proxy: 내부 인트라넷에서 인터네상에 있는 서버에 요청할 때 먼저 프록시 서버를 호출하게 되는데 이런 방식이 포워드 프록시
+   - Reverse Proxy: 내부 인트라넷에 있는 서버를 호출하기 위해서 인터넷 망에 있는 클라이언트가 리버스 프록시 서버에 요청하여 응답을 받는 방식
+      - 특징: 보안, 성능, 트래픽 분산
 
 - **이벤트 소싱**
 
