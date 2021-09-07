@@ -7,7 +7,7 @@ AWS vs 전통적인 인프라
 인프라 확장
 =====
 1. 인프라 확장 - `Scale Up`/`Scale Out`/`Auto Scaling`
-1. 데이터베이스 확장 - `Master, Slave`/`shading`
+1. 데이터베이스 확장 - `Master, Slave`/`Shading`
 1. NoSQL 사용
 
 
