@@ -303,7 +303,7 @@ types = {
 그림으로 설명
 =====
 
-- 출처 - [**Git & GitHub Page/Tacademy**](https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=171)
+- [출처] - [**Git & GitHub Page/Tacademy**](https://tacademy.skplanet.com/live/player/onlineLectureDetail.action?seq=171)
 
 - **파일 스테이지로 올리기 `git add [file]`**
 

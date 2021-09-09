@@ -34,7 +34,7 @@ IntelliJ + Gradle + SpringBoot
 
 - **Step 4**
 
-1. 참고 - [**Gradle 가이드**](https://docs.gradle.org/current/userguide/plugins.html#sec:using_plugins)
+1. [참고] - [**Gradle 가이드**](https://docs.gradle.org/current/userguide/plugins.html#sec:using_plugins)
 1. 플러그인 설정 확인
 1. 의존성 라이브러리 설정 확인
 
