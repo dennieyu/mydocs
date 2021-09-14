@@ -114,7 +114,7 @@ TOOL
 
 - SonarQube Dashboard
    
-   <img title="Sonarqube" src="./images/sonarQube_screenshot.png" alt="Sonarqube" width="800px">
+   <img title="Sonarqube" src="./images/sonarqube_screenshot_en.png" alt="Sonarqube" width="800px">
 
 
 [AQueryTool](http://aquerytool.com/)

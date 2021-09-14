@@ -9,13 +9,17 @@
 요구사항, 이슈 관리 툴
 =====
 
-  Confluence, Redmine, JIRA
+ Confluence, Redmine, JIRA
 
 
 개발 환경 툴
 =====
 
-  SpotBugs, SonarQube, PMD, jUnit
+ SpotBugs, SonarQube, PMD, jUnit
+ 
+ <img title="Sonarqube" src="./images/sonarqube_screenshot_ko.png" alt="Sonarqube" width="700px">
+ 
+ [**Sonarqube**](./SonarQube_Introduction.pdf) - Sonarqube 소개 자료
 
 
 소스 관리 시스템
