@@ -19,6 +19,7 @@
 1. [**Site Reliability Engineering**](./DevOpsVsSRE.md) - SRE 개념
 1. [**소프트웨어아키텍쳐**](./소프트웨어아키텍쳐.md) - 설계
 1. [**Openstack**](./오픈스택.md) - 소개
+1. [**Openshift**](./오픈시프트.md) - 소개
 1. [**AWS**](./AWS.md) - 소개
 1. [**Jenkins**](./Jenkins.md) - 소개
 
