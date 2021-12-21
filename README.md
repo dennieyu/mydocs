@@ -53,6 +53,7 @@
 1. [**Scala vs Kotlin**](./ScalaVsKotlin.md) - 개념
 
 ## FE
+1. [**SPA**](./플랫폼아키텍처개선관점_SPA_도입.pdf) - SPA 개념
 1. [**Angular**](./Angular_202012.pdf) - 앵귤러 개념
 1. [**React**](./React_202009.pdf) - 리액트 개념
 1. [**Vue**](./Vue_202009.pdf) - 뷰 개념
