@@ -61,7 +61,7 @@ AWS 환경에 자동 배포 서버 구축하기
 
 - CI/CD 파이프라인 구축
    - CodeDeploy Agent가 설치된 EC2 서버 2대(CodeDeploy와 S3에 접근가능한)
-   - Load Balander
+   - Load Balancer
    - S3 버킷
    - CodeDeploy Application
    - Jenkins(+ AWS CodeDeploy Plugin)가 설치된 서버 1대 (CodeDeploy에 접근 가능한)
