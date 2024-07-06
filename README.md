@@ -63,7 +63,8 @@
 1. [**자바스크립트클로저**](./자바스크립트클로저.md) - 클로저
 
 ## BDML
-1. [**빅데이터**](./빅데이터_202103.pdf) - 데이터플랫폼
+1. [**빅데이터상세**](./빅데이터_202103.pdf) - 데이터플랫폼
+1. [**빅데이터기본**](./빅데이터.md) - 데이터플랫폼
 1. [**데이터스토리지포맷**](./데이터스토리지포맷.md) - 데이터플랫폼
 1. [**Pandas**](https://www.kaggle.com/learn/pandas) - Kaggle 링크
 1. [**Data Visualization**](https://www.kaggle.com/learn/data-visualization) - Kaggle 링크
