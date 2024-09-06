@@ -3,7 +3,7 @@
 
 **Application Lifecycle Management**
 
- <img title="ALM" src="./resources/images/devops/ALM_1.png" alt="ALM_1" width="600px">
+ <img title="ALM" src="./images/devops/ALM_1.png" alt="ALM_1" width="600px">
 
 
 요구사항, 이슈 관리 툴
