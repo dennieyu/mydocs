@@ -23,6 +23,7 @@
 1. [**Openshift**](./오픈시프트.md) - 소개
 1. [**AWS**](./AWS.md) - 소개
 1. [**Jenkins**](./Jenkins.md) - 소개
+1. [**Azure Landing Zone**](./AzureLandingZone.md) - 소개
 
 ## BE
 1. [**클라우드네이티브애플리케이션**](./클라우드네이티브애플리케이션.md) - 개념
