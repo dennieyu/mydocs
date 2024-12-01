@@ -21,8 +21,9 @@
 1. [**소프트웨어아키텍쳐**](./소프트웨어아키텍쳐.md) - 설계
 1. [**Openstack**](./오픈스택.md) - 소개
 1. [**Openshift**](./오픈시프트.md) - 소개
-1. [**AWS**](./AWS.md) - 소개
 1. [**Jenkins**](./Jenkins.md) - 소개
+1. [**AWS**](./AWS.md) - 소개
+1. [**Azure전환**](./애저전환_계획.md) - 소개
 1. [**Azure Landing Zone**](./AzureLandingZone.md) - 소개
 
 ## BE
