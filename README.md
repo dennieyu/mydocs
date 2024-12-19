@@ -75,6 +75,7 @@
 1. [**Intro to Deep Learning**](https://www.kaggle.com/learn/intro-to-deep-learning) - Kaggle 링크
 1. [**EDA**](./EDA.md) - 탐색적 자료 분석
 1. [**MDM**](./MDM.md) - 마스터데이터관리/데이터가버넌스
+1. [**데이터분석**](./데이터분석.md) - 데이터분석
 
 ## 도메인
 1. [**프로젝트관리**](./domains/프로젝트관리.md) - 프로젝트관리
