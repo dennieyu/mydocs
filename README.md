@@ -78,7 +78,7 @@
 1. [**데이터분석**](./데이터분석.md) - 데이터분석
 
 ## AI
-1. [**Prompt Engineering / Fine-tuning / RAG / AI Agent**](./PromptEngineeringFine-tuningRAGAIAgent.md) - 데이터플랫폼
+1. [**Prompt Engineering / Fine-tuning / RAG / AI Agent**](./PromptEngineeringFinetuningRAGAIAgent.md) - 데이터플랫폼
 2. [**Copilot Studio 란**](./copilotstudio.md) - 데이터플랫폼
 3. [**AI 파운드리 란**](./AIFoundry.md) - 데이터플랫폼
 
