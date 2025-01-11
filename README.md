@@ -79,8 +79,8 @@
 
 ## AI
 1. [**Prompt Engineering / Fine-tuning / RAG / AI Agent**](./PromptEngineeringFinetuningRAGAIAgent.md) - 데이터플랫폼
-2. [**Copilot Studio 란**](./copilotstudio.md) - 데이터플랫폼
-3. [**AI 파운드리 란**](./AIFoundry.md) - 데이터플랫폼
+2. [**Copilot Studio**](./copilotstudio.md) - 데이터플랫폼
+3. [**AI 파운드리**](./AIFoundry.md) - 데이터플랫폼
 
 ## 도메인
 1. [**프로젝트관리**](./domains/프로젝트관리.md) - 프로젝트관리
