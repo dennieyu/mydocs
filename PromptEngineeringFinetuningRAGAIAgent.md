@@ -90,6 +90,7 @@
 <img title="devops_motive" src="./images/ai/AI_RAG_WebApp.png" alt="RAG" width="900px">
 <img title="devops_motive" src="./images/ai/AI_RAG_PromptFlow.png" alt="RAG" width="900px">
   - RAG 아키텍처 구성 (WebApp, LLM API)
+
    - [**RAG아키텍처/김현수님**](https://www.youtube.com/@kimhs81)
 
 ---
@@ -124,10 +125,13 @@
 - **사례**:
 <img title="devops_motive" src="./images/ai/AI_Agent_Architecture_Components.png" alt="Agents" width="900px">
   - General agent architecture and components
+
 <img title="devops_motive" src="./images/ai/AI_Agent_Tools.png" alt="Agents" width="700px">
   - 1-to-many relationship between Agents, Extensions and APIs
+
 <img title="devops_motive" src="./images/ai/AI_Agent_Response_InRAGBasedApp.png" alt="Agents" width="700px">
   - The lifecycle of a user request and agent response in a RAG based application
+
    - [**Agents백서**](./Newwhitepaper_Agents2.pdf) - Google WhitePaper
    - [**유튜브/10X AI Club**](https://www.youtube.com/watch?v=HujQhD8J2LQ) - Agents에 대한 모든 기초 설명
 
