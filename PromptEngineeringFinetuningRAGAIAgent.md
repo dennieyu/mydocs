@@ -86,11 +86,11 @@
   - 검색 속도와 응답 생성 속도 간 균형이 중요.
 
 - **RAG 아키텍처 구성 (WebApp, LLM API)**
-<img title="devops_motive" src="./images/ai/AI_RAG_Architecture.png" alt="RAG" width="900px">
+<img title="devops_motive" src="./images/ai/AI_RAG_Architecture.png" alt="RAG" width="1100px">
 
-<img title="devops_motive" src="./images/ai/AI_RAG_WebApp.png" alt="RAG" width="900px">
+<img title="devops_motive" src="./images/ai/AI_RAG_WebApp.png" alt="RAG" width="1100px">
 
-<img title="devops_motive" src="./images/ai/AI_RAG_PromptFlow.png" alt="RAG" width="900px">
+<img title="devops_motive" src="./images/ai/AI_RAG_PromptFlow.png" alt="RAG" width="1100px">
 
 - [**(출처) RAG아키텍처/김현수님**](https://www.youtube.com/@kimhs81)
 
