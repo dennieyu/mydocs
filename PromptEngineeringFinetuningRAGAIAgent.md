@@ -86,11 +86,11 @@
   - 검색 속도와 응답 생성 속도 간 균형이 중요.
 
 - **사례**:
+- RAG 아키텍처 구성 (WebApp, LLM API)
 <img title="devops_motive" src="./images/ai/AI_RAG_Architecture.png" alt="RAG" width="900px">
 <img title="devops_motive" src="./images/ai/AI_RAG_WebApp.png" alt="RAG" width="900px">
 <img title="devops_motive" src="./images/ai/AI_RAG_PromptFlow.png" alt="RAG" width="900px">
 
-  - RAG 아키텍처 구성 (WebApp, LLM API)
   - [**RAG아키텍처/김현수님**](https://www.youtube.com/@kimhs81)
 
 ---
@@ -123,14 +123,14 @@
   - 잘못된 의사결정으로 예상치 못한 결과가 발생할 수 있음.
  
 - **사례**:
-<img title="devops_motive" src="./images/ai/AI_Agent_Architecture_Components.png" alt="Agents" width="600px">
 - General agent architecture and components
-  
-<img title="devops_motive" src="./images/ai/AI_Agent_Tools.png" alt="Agents" width="600px">
+<img title="devops_motive" src="./images/ai/AI_Agent_Architecture_Components.png" alt="Agents" width="800px">
+
 - 1-to-many relationship between Agents, Extensions and APIs
-  
-<img title="devops_motive" src="./images/ai/AI_Agent_Response_InRAGBasedApp.png" alt="Agents" width="600px">
-- The lifecycle of a user request and agent response in a RAG based application
+<img title="devops_motive" src="./images/ai/AI_Agent_Tools.png" alt="Agents" width="600px">
+
+- The lifecycle of a user request and agent response in a RAG based application  
+<img title="devops_motive" src="./images/ai/AI_Agent_Response_InRAGBasedApp.png" alt="Agents" width="700px">
 
   - [**Agents백서**](./Newwhitepaper_Agents2.pdf) - Agents에 대한 모든 기초 설명
   - [**유튜브/10X AI Club**](https://www.youtube.com/watch?v=HujQhD8J2LQ)
