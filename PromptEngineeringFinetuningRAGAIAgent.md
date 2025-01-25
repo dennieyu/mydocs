@@ -122,7 +122,28 @@
 - **단점**:
   - 설계와 유지보수가 복잡.
   - 잘못된 의사결정으로 예상치 못한 결과가 발생할 수 있음.
- 
+
+- **설명**:
+  - 오케스트레이션 레이어 (Orchestration Layer)
+    ```plaintext
+    에이전트(Agent)가 정보를 수집하고, 내부 추론을 수행하며, 다음 행동 또는 결정을 내리는 과정을 관리하는 핵심 요소입니다.
+    에이전트(Agent)와 수행 작업에 따라 복잡성이 다양하며, 간단한 계산에서부터 복잡한 머신러닝 알고리즘까지 포함할 수 있습니다.
+    ```
+
+  - 모델 (Model)
+    ```plaintext
+    모델(Model)은 에이전트(Agent)의 의사 결정을 담당하는 핵심 요소입니다.
+    텍스트, 이미지 생성 등 다양한 작업을 수행할 수 있는 대규모 언어 모델(LLM)을 활용합니다.
+    사용자 지침 기반 추론 및 논리 프레임워크(예: ReAct, Chain-of-Thought, Tree-of-Thoughts)를 따를 수 있습니다.
+    ```
+
+  - 도구 (Tools)
+    ```plaintext
+    에이전트(Agent)가 외부 데이터 및 서비스와 상호작용할 수 있도록 지원하는 요소입니다.
+    API 호출, 데이터베이스 검색, 실시간 정보 접근 등 다양한 형태로 존재하며,
+    에이전트(Agent)가 실제 세계와 연결되는 핵심 통로 역할을 합니다.
+    ```
+
 - **General agent architecture and components**
 <img title="devops_motive" src="./images/ai/AI_Agent_Architecture_Components.png" alt="Agents" width="900px">
 
@@ -132,7 +153,7 @@
 - **The lifecycle of a user request and agent response in a RAG based application**
 <img title="devops_motive" src="./images/ai/AI_Agent_Response_InRAGBasedApp.png" alt="Agents" width="700px">
 
-- [**(출처) Agents백서**](./Newwhitepaper_Agents2.pdf) - Google WhitePaper
+- [**(출처) Agents 백서**](./Newwhitepaper_Agents2.pdf) - Google White Paper
 
 - [**(출처) 유튜브/10X AI Club**](https://www.youtube.com/watch?v=HujQhD8J2LQ) - Agents에 대한 모든 기초 설명
 
