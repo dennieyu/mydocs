@@ -85,6 +85,12 @@
   - 검색된 데이터 품질에 따라 결과의 신뢰도가 달라짐.
   - 검색 속도와 응답 생성 속도 간 균형이 중요.
 
+- **구현**:
+<img title="devops_motive" src="./images/ai/AI_RAG_Architecture.png" alt="RAG" width="600px">
+<img title="devops_motive" src="./images/ai/AI_RAG_WebApp.png" alt="RAG" width="600px">
+<img title="devops_motive" src="./images/ai/AI_RAG_PromptFlow.png" alt="RAG" width="600px">
+<출처 - https://www.youtube.com/@kimhs81>
+
 ---
 
 ### **4. AI Agent**
