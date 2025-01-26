@@ -307,7 +307,7 @@ types = {
 
 - **파일 스테이지로 올리기 `git add [file]`**
 
-<img title="git-flow" src="./images/git2/git add [file].png" alt="develop">
+<img title="git-flow" src="./images/git2/git add %5Bfile%5D.png" alt="develop">
 
 - **스테이지에 있는 내용 커밋 `git commit -m "간단한 설명"`**
 
@@ -323,19 +323,19 @@ types = {
 
 - **원격 자장소 다운받기 `git clone [url]`**
 
-<img title="git-flow" src="./images/git2/git clone [url].png" alt="develop">
+<img title="git-flow" src="./images/git2/git clone %5Burl%5D.png" alt="develop">
 
 - **기능별로 개발하기 `git branch [name]`**
 
-<img title="git-flow" src="./images/git2/git branch [name].png" alt="develop">
+<img title="git-flow" src="./images/git2/git branch %5Bname%5D.png" alt="develop">
 
 - **브랜치 이동하기 `git checkout [name]`**
 
-<img title="git-flow" src="./images/git2/git checkout [name].png" alt="develop">
+<img title="git-flow" src="./images/git2/git checkout %5Bname%5D.png" alt="develop">
 
 - **브랜치 합치기 `git merge [name]`**
 
-<img title="git-flow" src="./images/git2/git merge [name].png" alt="develop">
+<img title="git-flow" src="./images/git2/git merge %5Bname%5D.png" alt="develop">
 
 - **브랜치 합치기 `git rebase master`**
 
@@ -343,7 +343,7 @@ types = {
 
 - **브랜치 지우기 `git branch -d [name]`**
 
-<img title="git-flow" src="./images/git2/git branch -d [name].png" alt="develop">
+<img title="git-flow" src="./images/git2/git branch -d %5Bname%5D.png" alt="develop">
 
 - **원격에서 기록 가져오기 `git fetch`**
 
@@ -355,11 +355,11 @@ types = {
 
 - **실수한 커밋을 RESET `git reset [option] [branch]`**
 
-<img title="git-flow" src="./images/git2/git reset [option] [branch].png" alt="develop">
+<img title="git-flow" src="./images/git2/git reset %5Boption%5D %5Bbranch%5D.png" alt="develop">
 
 - **실수한 커밋 남기기 `git revert [branch]`**
 
-<img title="git-flow" src="./images/git2/git revert [branch].png" alt="develop">
+<img title="git-flow" src="./images/git2/git revert %5Bbranch%5D.png" alt="develop">
 
 - **현재 작업 보류 `git stash`**
 
