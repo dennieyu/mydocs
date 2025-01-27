@@ -14,4 +14,4 @@
 
 - [**(출처) 유투브/쎄엔토트**](https://www.youtube.com/watch?v=f6qox6k-Mng)
 
-- [**GitHub Copilot, M365 Copilot, & Copilot Studio**](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/vignettes/github-m365-copilot-stud
+- [**GitHub Copilot, M365 Copilot, & Copilot Studio**](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/vignettes/github-m365-copilot-stud)
