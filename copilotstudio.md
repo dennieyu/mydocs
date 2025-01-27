@@ -12,6 +12,6 @@
 
 <img title="Copilot_Custom" src="./images/ai/Copilot_Custom.png" alt="Copilot" width="1100px">
 
-- [**(출처) 유투브/쎄엔토트**](https://www.youtube.com/watch?v=f6qox6k-Mng)
+- [**(출처) 유튜브/쎄엔토트**](https://www.youtube.com/watch?v=f6qox6k-Mng)
 
 - [**GitHub Copilot, M365 Copilot, & Copilot Studio**](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/vignettes/github-m365-copilot-studio)
