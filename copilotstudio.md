@@ -6,10 +6,10 @@
 
 <img title="devops_motive" src="./images/ai/Copilot_Intro.png" alt="Copilot" width="1100px">
 
-<img title="devops_motive" src="./images/ai/Copilot_Intro.png" alt="Copilot" width="1100px">
+<img title="devops_motive" src="./images/ai/Copilot_All.png" alt="Copilot" width="1100px">
 
-<img title="devops_motive" src="./images/ai/Copilot_Intro.png" alt="Copilot" width="1100px">
+<img title="devops_motive" src="./images/ai/Copilot_M365.png" alt="Copilot" width="1100px">
 
-<img title="devops_motive" src="./images/ai/Copilot_Intro.png" alt="Copilot" width="1100px">
+<img title="devops_motive" src="./images/ai/Copilot_Custom.png" alt="Copilot" width="1100px">
 
 - [**(출처) 유투브/쎄엔토트**](https://www.youtube.com/watch?v=f6qox6k-Mng)
