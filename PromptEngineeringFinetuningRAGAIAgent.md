@@ -87,11 +87,11 @@
 
 - **RAG 아키텍처 구성 (WebApp, LLM API)**
 
-<img title="devops_motive" src="./images/ai/AI_RAG_Architecture.png" alt="RAG" width="1100px">
+<img title="AI_RAG_Architecture" src="./images/ai/AI_RAG_Architecture.png" alt="RAG" width="1100px">
 
-<img title="devops_motive" src="./images/ai/AI_RAG_WebApp.png" alt="RAG" width="1100px">
+<img title="AI_RAG_WebApp" src="./images/ai/AI_RAG_WebApp.png" alt="RAG" width="1100px">
 
-<img title="devops_motive" src="./images/ai/AI_RAG_PromptFlow.png" alt="RAG" width="1100px">
+<img title="AI_RAG_PromptFlow" src="./images/ai/AI_RAG_PromptFlow.png" alt="RAG" width="1100px">
 
 - [**(출처) RAG아키텍처/김현수님**](https://www.youtube.com/@kimhs81)
 
@@ -146,13 +146,13 @@
     ```
 
 - **General agent architecture and components**
-<img title="devops_motive" src="./images/ai/AI_Agent_Architecture_Components.png" alt="Agents" width="900px">
+<img title="AI_Agent_Architecture_Components" src="./images/ai/AI_Agent_Architecture_Components.png" alt="Agents" width="900px">
 
 - **1-to-many relationship between Agents, Extensions and APIs**
-<img title="devops_motive" src="./images/ai/AI_Agent_Tools.png" alt="Agents" width="700px">
+<img title="AI_Agent_Tools" src="./images/ai/AI_Agent_Tools.png" alt="Agents" width="700px">
 
 - **The lifecycle of a user request and agent response in a RAG based application**
-<img title="devops_motive" src="./images/ai/AI_Agent_Response_InRAGBasedApp.png" alt="Agents" width="700px">
+<img title="AI_Agent_Response_InRAGBasedApp" src="./images/ai/AI_Agent_Response_InRAGBasedApp.png" alt="Agents" width="700px">
 
 - [**(출처) Agents 백서**](./Newwhitepaper_Agents2.pdf) - Google White Paper
 
